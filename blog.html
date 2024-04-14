@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Блог</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+<header class="header" data-lp>
+  <div class="header__container">
+    <div class="header__body">
+      <a class="header__logo" href="#">
+        <img src="/img/header/logo.svg" alt="Логотип компании">
+      </a>
+      <div class="header__menu menu">
+        <div class="menu__inner">
+          <a class="menu__logo-mobile" href="#">
+            <img src="/img/header/logo.svg" alt="Логотип компании">
+          </a>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="" class="menu__link">услуги</a></li>
+              <li class="menu__item"><a href="" class="menu__link">О ФИРМЕ</a></li>
+              <li class="menu__item"><a href="" class="menu__link">кейсы</a></li>
+              <li class="menu__item"><a href="" class="menu__link">команда</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+              <li class="menu__item"><a href="" class="menu__link">медиа</a></li>
+              <li class="menu__item"><a href="" class="menu__link">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="menu__mobile-info mobile-info-menu">
+            <div class="mobile-info-menu__body">
+              <div class="mobile-info-menu__links">
+                <a class="mobile-info-menu__link-phone" href="tel:84959259554">8 495 925-95-54</a>
+                <a class="mobile-info-menu__link-email" href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+              </div>
+              <div class="mobile-info-menu__address">Москва, ул. Николоямская, д. 48, строение 2</div>
+              <div class="mobile-info-menu__socials socials">
+                <a class="socials__link" href="#" target="_blank" aria-label="Ватсап">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 16C0.171967 15.3712 0.335585 14.7742 0.498536 14.1768C0.695213 13.4562 0.894226 12.736 1.08489 12.0137C1.10353 11.936 1.09456 11.8542 1.05951 11.7823C0.291508 10.3879 -0.0424073 8.8926 0.091159 7.31251C0.282493 5.05056 1.27689 3.19265 3.03296 1.75247C4.00965 0.948143 5.1716 0.400223 6.41352 0.158356C10.124 -0.579599 13.6929 1.31905 15.2219 4.65754C15.7925 5.90538 16.0089 7.21767 15.9027 8.57972C15.6359 12.0054 13.1025 14.9211 9.748 15.6691C7.85704 16.0905 6.04822 15.8431 4.32154 14.9679C4.24451 14.9322 4.15779 14.9233 4.07511 14.9425C2.78386 15.2764 1.49394 15.6143 0.204022 15.9519C0.146589 15.9659 0.0888216 15.9786 0 16ZM1.91534 14.106C1.99147 14.0877 2.04891 14.0746 2.10601 14.0596C2.80723 13.8763 3.50845 13.6966 4.20968 13.5056C4.35126 13.4672 4.45844 13.489 4.58199 13.5621C6.11032 14.4677 7.74484 14.7358 9.47953 14.3454C13.186 13.5107 15.4302 9.60384 14.2879 5.98285C13.2471 2.68443 9.95369 0.773763 6.56578 1.50838C3.77158 2.11577 1.55772 4.56271 1.41814 7.64976C1.36037 8.92599 1.64053 10.1348 2.30836 11.2267C2.51973 11.5723 2.55679 11.8611 2.43291 12.2371C2.23356 12.8442 2.08864 13.4696 1.91534 14.106Z"
+                      fill="#1F232F" />
+                    <path
+                      d="M3.95117 6.14593C3.96286 5.48344 4.22164 4.93849 4.68946 4.48403C4.75743 4.41419 4.8389 4.3589 4.92891 4.32153C5.01892 4.28416 5.11559 4.26549 5.21304 4.26665C5.32423 4.26665 5.43643 4.28335 5.54695 4.27233C5.78069 4.24929 5.91426 4.36416 5.99607 4.56284C6.21579 5.08909 6.44285 5.61267 6.6472 6.14493C6.68427 6.24143 6.66256 6.3957 6.60713 6.48552C6.4567 6.71803 6.29211 6.94107 6.11428 7.15336C6.00809 7.28492 5.99941 7.40179 6.08522 7.54604C6.73202 8.63194 7.63125 9.42165 8.81031 9.88746C8.96992 9.95057 9.10015 9.92553 9.20934 9.78728C9.40568 9.53952 9.61004 9.29843 9.8017 9.04633C9.91189 8.9004 10.0408 8.84597 10.2044 8.92144C10.7721 9.18857 11.3357 9.45571 11.8957 9.73586C11.9545 9.76525 12.0089 9.86475 12.0112 9.93387C12.0339 10.5232 11.8626 11.0168 11.3374 11.3604C10.6836 11.7878 9.99704 11.8252 9.2671 11.6201C7.39484 11.0946 6.00442 9.92386 4.88814 8.37849C4.52083 7.8676 4.18224 7.34135 4.03933 6.7176C3.99458 6.5316 3.97922 6.33727 3.95117 6.14593Z"
+                      fill="#1F232F" />
+                  </svg>
+                </a>
+                <a class="socials__link" href="#" target="_blank" aria-label="Телеграм">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_54_519)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.28662 5.90595C7.5085 6.2296 5.95336 6.89946 3.62119 7.91555C3.24249 8.06615 3.0441 8.21348 3.02604 8.35754C2.99552 8.601 3.30041 8.69687 3.71558 8.82742C3.77205 8.84517 3.83057 8.86357 3.89056 8.88307C4.29902 9.01585 4.84848 9.17118 5.13412 9.17735C5.39323 9.18295 5.68242 9.07613 6.00169 8.85689C8.1807 7.386 9.30552 6.64254 9.37614 6.62651C9.42596 6.6152 9.495 6.60099 9.54178 6.64256C9.58855 6.68414 9.58395 6.76288 9.579 6.784C9.5488 6.91276 8.352 8.02541 7.73267 8.6012C7.5396 8.78069 7.40265 8.90801 7.37465 8.93709C7.31193 9.00223 7.24802 9.06385 7.18658 9.12307C6.80711 9.48889 6.52254 9.76321 7.20234 10.2112C7.52902 10.4265 7.79043 10.6045 8.05123 10.7821C8.33604 10.9761 8.62012 11.1695 8.98767 11.4104C9.08132 11.4718 9.17075 11.5356 9.25786 11.5977C9.58931 11.834 9.8871 12.0463 10.255 12.0124C10.4688 11.9928 10.6896 11.7917 10.8017 11.1922C11.0667 9.77543 11.5877 6.70564 11.7081 5.44065C11.7186 5.32982 11.7054 5.18798 11.6947 5.12572C11.684 5.06345 11.6618 4.97474 11.5808 4.90907C11.485 4.83129 11.337 4.81489 11.2708 4.81606C10.9699 4.82136 10.5083 4.98188 8.28662 5.90595Z"
+                        fill="#1F232F" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_54_519">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="socials__link" href="#" target="_blank" aria-label="Вконтакте">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_54_522)">
+                      <path
+                        d="M14.8767 1.12333C13.75 0 11.94 0 8.33333 0H7.66667C4.06 0 2.25 0 1.12333 1.12333C-0.00333333 2.24667 1.15348e-07 4.06 1.15348e-07 7.66667V8.33333C1.15348e-07 11.94 7.94729e-08 13.75 1.12333 14.8767C2.24667 16.0033 4.06 16 7.66667 16H8.33333C11.9533 16 13.7633 16 14.89 14.8767C16.0167 13.7533 16 11.94 16 8.33333V7.66667C16 4.06 16 2.25 14.8767 1.12333ZM11.48 11.5267C11.3057 10.9021 10.9507 10.343 10.4597 9.91959C9.96861 9.49615 9.36338 9.22725 8.72 9.14667V11.5267H8.51333C4.86667 11.5267 2.78667 9.02667 2.7 4.86H4.52667C4.58667 7.91333 5.93333 9.19333 7 9.47333V4.86667H8.72V7.5C9.77333 7.38667 10.88 6.18667 11.2533 4.86667H12.9733C12.8351 5.55309 12.5565 6.20353 12.155 6.77715C11.7534 7.35077 11.2377 7.83519 10.64 8.2C11.3063 8.53048 11.895 8.99842 12.3673 9.57298C12.8396 10.1475 13.1847 10.8157 13.38 11.5333L11.48 11.5267Z"
+                        fill="#1F232F" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_54_522">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="socials__link" href="#" target="_blank" aria-label="Ютуб">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.8406 4.79995C15.8406 4.79995 15.6844 3.69683 15.2031 3.21245C14.5938 2.57495 13.9125 2.57183 13.6 2.53433C11.3625 2.37183 8.00313 2.37183 8.00313 2.37183H7.99687C7.99687 2.37183 4.6375 2.37183 2.4 2.53433C2.0875 2.57183 1.40625 2.57495 0.796875 3.21245C0.315625 3.69683 0.1625 4.79995 0.1625 4.79995C0.1625 4.79995 0 6.09683 0 7.39058V8.60308C0 9.89683 0.159375 11.1937 0.159375 11.1937C0.159375 11.1937 0.315625 12.2968 0.79375 12.7812C1.40313 13.4187 2.20313 13.3968 2.55938 13.4656C3.84063 13.5875 8 13.625 8 13.625C8 13.625 11.3625 13.6187 13.6 13.4593C13.9125 13.4218 14.5938 13.4187 15.2031 12.7812C15.6844 12.2968 15.8406 11.1937 15.8406 11.1937C15.8406 11.1937 16 9.89995 16 8.60308V7.39058C16 6.09683 15.8406 4.79995 15.8406 4.79995ZM6.34688 10.075V5.57808L10.6687 7.83433L6.34688 10.075Z"
+                      fill="#1F232F" />
+                  </svg>
+                </a>
+                <a class="socials__link" href="#" target="_blank" aria-label="Инстаграм">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_54_513)">
+                      <path
+                        d="M8 1.44062C10.1375 1.44062 10.3906 1.45 11.2313 1.4875C12.0125 1.52187 12.4344 1.65313 12.7156 1.7625C13.0875 1.90625 13.3563 2.08125 13.6344 2.35937C13.9156 2.64062 14.0875 2.90625 14.2313 3.27812C14.3406 3.55937 14.4719 3.98437 14.5063 4.7625C14.5438 5.60625 14.5531 5.85937 14.5531 7.99375C14.5531 10.1312 14.5438 10.3844 14.5063 11.225C14.4719 12.0063 14.3406 12.4281 14.2313 12.7094C14.0875 13.0813 13.9125 13.35 13.6344 13.6281C13.3531 13.9094 13.0875 14.0813 12.7156 14.225C12.4344 14.3344 12.0094 14.4656 11.2313 14.5C10.3875 14.5375 10.1344 14.5469 8 14.5469C5.8625 14.5469 5.60938 14.5375 4.76875 14.5C3.9875 14.4656 3.56563 14.3344 3.28438 14.225C2.9125 14.0813 2.64375 13.9062 2.36563 13.6281C2.08438 13.3469 1.9125 13.0813 1.76875 12.7094C1.65938 12.4281 1.52813 12.0031 1.49375 11.225C1.45625 10.3813 1.44688 10.1281 1.44688 7.99375C1.44688 5.85625 1.45625 5.60312 1.49375 4.7625C1.52813 3.98125 1.65938 3.55937 1.76875 3.27812C1.9125 2.90625 2.0875 2.6375 2.36563 2.35937C2.64688 2.07812 2.9125 1.90625 3.28438 1.7625C3.56563 1.65313 3.99063 1.52187 4.76875 1.4875C5.60938 1.45 5.8625 1.44062 8 1.44062ZM8 0C5.82813 0 5.55625 0.009375 4.70313 0.046875C3.85313 0.084375 3.26875 0.221875 2.7625 0.41875C2.23438 0.625 1.7875 0.896875 1.34375 1.34375C0.896875 1.7875 0.625 2.23438 0.41875 2.75938C0.221875 3.26875 0.084375 3.85 0.046875 4.7C0.009375 5.55625 0 5.82812 0 8C0 10.1719 0.009375 10.4437 0.046875 11.2969C0.084375 12.1469 0.221875 12.7312 0.41875 13.2375C0.625 13.7656 0.896875 14.2125 1.34375 14.6562C1.7875 15.1 2.23438 15.375 2.75938 15.5781C3.26875 15.775 3.85 15.9125 4.7 15.95C5.55313 15.9875 5.825 15.9969 7.99688 15.9969C10.1688 15.9969 10.4406 15.9875 11.2938 15.95C12.1438 15.9125 12.7281 15.775 13.2344 15.5781C13.7594 15.375 14.2063 15.1 14.65 14.6562C15.0938 14.2125 15.3688 13.7656 15.5719 13.2406C15.7688 12.7313 15.9063 12.15 15.9438 11.3C15.9813 10.4469 15.9906 10.175 15.9906 8.00313C15.9906 5.83125 15.9813 5.55937 15.9438 4.70625C15.9063 3.85625 15.7688 3.27187 15.5719 2.76562C15.375 2.23437 15.1031 1.7875 14.6563 1.34375C14.2125 0.9 13.7656 0.625 13.2406 0.421875C12.7313 0.225 12.15 0.0875 11.3 0.05C10.4438 0.009375 10.1719 0 8 0Z"
+                        fill="#1F232F" />
+                      <path
+                        d="M8 3.89062C5.73125 3.89062 3.89062 5.73125 3.89062 8C3.89062 10.2688 5.73125 12.1094 8 12.1094C10.2688 12.1094 12.1094 10.2688 12.1094 8C12.1094 5.73125 10.2688 3.89062 8 3.89062ZM8 10.6656C6.52813 10.6656 5.33437 9.47188 5.33437 8C5.33437 6.52813 6.52813 5.33437 8 5.33437C9.47188 5.33437 10.6656 6.52813 10.6656 8C10.6656 9.47188 9.47188 10.6656 8 10.6656Z"
+                        fill="#1F232F" />
+                      <path
+                        d="M13.2312 3.72817C13.2312 4.25943 12.8 4.68755 12.2719 4.68755C11.7406 4.68755 11.3125 4.2563 11.3125 3.72817C11.3125 3.19692 11.7438 2.7688 12.2719 2.7688C12.8 2.7688 13.2312 3.20005 13.2312 3.72817Z"
+                        fill="#1F232F" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_54_513">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__contacts contacts-header">
+        <div class="contacts-header__body">
+          <a class="contacts-header__link-phone" href="tel:84959259554">8 495 925-95-54</a>
+          <a class="contacts-header__link-email" href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+        </div>
+      </div>
+      <button type="button" class="icon-menu" aria-label="Открыть меню"><span></span></button>
+    </div>
+  </div>
+</header>    <main class="page page--blog">
+      <div class="blog">
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__container">
+            <ol class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current">блог</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <section class="blog__publications publications publications--blog">
+          <div class="publications__container">
+            <div class="publications__wrapper" data-tabs>
+              <div class="publications__top top-publications top-publications--blog">
+                <h1 class="top-publications__title _title">Наши публикации</h1>
+                <div class="top-publications__navigation navigation-publications navigation-publications--blog"
+                  data-tabs-titles>
+                  <button type="button" class="navigation-publications__title _tab-active">Все</button>
+                  <button type="button" class="navigation-publications__title">Статьи</button>
+                  <button type="button" class="navigation-publications__title">новости</button>
+                  <button type="button" class="navigation-publications__title">обзоры</button>
+                </div>
+              </div>
+              <div class="publications__content" data-tabs-body>
+                <div class="publications__body">
+                  <div class="publications__content-blog">
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/01.webp, img/publications/01_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/01.jpg" srcset="/img/publications/01_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/03.webp, img/publications/03_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/03.jpg" srcset="/img/publications/03_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Руководство по соблюдению обязательных
+                              требований
+                              в сфере рекламы</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/02.webp, img/publications/02_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/02.jpg" srcset="/img/publications/02_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Судебная практика
+                              по спорам об исключении участника корпорации</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/04.webp, img/publications/04_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/04.jpg" srcset="/img/publications/04_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/05.webp, img/publications/05_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/05.jpg" srcset="/img/publications/05_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/06.webp, img/publications/06_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/06.jpg" srcset="/img/publications/06_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="publications__links">
+                    <a class="publications__link link-services" href="#">
+                      <div class="link-services__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 3.75V19.3269" stroke="#1F232F" stroke-linecap="square" stroke-linejoin="round" />
+                          <path d="M5.25 13.5L12 20.25L18.75 13.5" stroke="#1F232F" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="link-services__text">Загрузить больше</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="publications__body">
+                  <div class="publications__content-blog">
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/06.webp, img/publications/06_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/06.jpg" srcset="/img/publications/06_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/04.webp, img/publications/04_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/04.jpg" srcset="/img/publications/04_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Руководство по соблюдению обязательных
+                              требований
+                              в сфере рекламы</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/01.webp, img/publications/01_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/01.jpg" srcset="/img/publications/01_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Судебная практика
+                              по спорам об исключении участника корпорации</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/03.webp, img/publications/03_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/03.jpg" srcset="/img/publications/03_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/02.webp, img/publications/02_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/02.jpg" srcset="/img/publications/02_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/05.webp, img/publications/05_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/05.jpg" srcset="/img/publications/05_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="publications__links">
+                    <a class="publications__link link-services" href="#">
+                      <div class="link-services__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 3.75V19.3269" stroke="#1F232F" stroke-linecap="square" stroke-linejoin="round" />
+                          <path d="M5.25 13.5L12 20.25L18.75 13.5" stroke="#1F232F" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="link-services__text">Загрузить больше</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="publications__body">
+                  <div class="publications__content-blog">
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/01.webp, img/publications/01_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/01.jpg" srcset="/img/publications/01_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/03.webp, img/publications/03_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/03.jpg" srcset="/img/publications/03_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Руководство по соблюдению обязательных
+                              требований
+                              в сфере рекламы</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/02.webp, img/publications/02_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/02.jpg" srcset="/img/publications/02_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Судебная практика
+                              по спорам об исключении участника корпорации</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/04.webp, img/publications/04_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/04.jpg" srcset="/img/publications/04_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/05.webp, img/publications/05_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/05.jpg" srcset="/img/publications/05_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/06.webp, img/publications/06_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/06.jpg" srcset="/img/publications/06_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="publications__links">
+                    <a class="publications__link link-services" href="#">
+                      <div class="link-services__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 3.75V19.3269" stroke="#1F232F" stroke-linecap="square" stroke-linejoin="round" />
+                          <path d="M5.25 13.5L12 20.25L18.75 13.5" stroke="#1F232F" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="link-services__text">Загрузить больше</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="publications__body">
+                  <div class="publications__content-blog">
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/06.webp, img/publications/06_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/06.jpg" srcset="/img/publications/06_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/04.webp, img/publications/04_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/04.jpg" srcset="/img/publications/04_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Руководство по соблюдению обязательных
+                              требований
+                              в сфере рекламы</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/01.webp, img/publications/01_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/01.jpg" srcset="/img/publications/01_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Судебная практика
+                              по спорам об исключении участника корпорации</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/03.webp, img/publications/03_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/03.jpg" srcset="/img/publications/03_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/02.webp, img/publications/02_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/02.jpg" srcset="/img/publications/02_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide-publications__item">
+                      <a class="slide-publications__image" href="#">
+                        <picture>
+                          <source srcset="/img/publications/05.webp, img/publications/05_2x.webp 2x"
+                            type="image/webp" />
+                          <img src="/img/publications/05.jpg" srcset="/img/publications/05_2x.jpg 2x" loading="lazy"
+                            alt="" />
+                        </picture>
+                      </a>
+                      <div class="slide-publications__body">
+                        <div class="slide-publications__arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#1F232F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.25 6H18V15.75" stroke="#1F232F" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="slide-publications__inner">
+                          <div class="slide-publications__row">
+                            <div class="slide-publications__category">Статья</div>
+                            <div class="slide-publications__date">26 декабря</div>
+                          </div>
+                          <h3 class="slide-publications__title">
+                            <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                              разрешения споров</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="publications__links">
+                    <a class="publications__link link-services" href="#">
+                      <div class="link-services__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 3.75V19.3269" stroke="#1F232F" stroke-linecap="square" stroke-linejoin="round" />
+                          <path d="M5.25 13.5L12 20.25L18.75 13.5" stroke="#1F232F" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="link-services__text">Загрузить больше</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+<!-- <div class="popup" id="popup" aria-hidden="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button type="button" class="popup__close" aria-label="Закрыть модальное окно" data-popup-close></button>
+      <div class="popup__body"></div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="popup" id="service" aria-hidden="true">
+  <div class="popup__wrapper">
+    <div class="popup__content popup__content--service">
+      <button class="popup__close" aria-label="Закрыть модальное окно" data-popup-close type="button"></button>
+      <div class="popup__service service-popup">
+        <div class="service-popup__content">
+          <div class="service-popup__top top-service-popup">
+            <div class="top-service-popup__body">
+              <div class="top-service-popup__category">Споры и сделки с недвижимостью</div>
+              <h2 class="top-service-popup__title">Недвижимость и строительство</h2>
+            </div>
+            <div class="top-service-popup__background">
+              <picture>
+                <source srcset="/img/accompaniment/bg.webp, img/accompaniment/bg_2x.webp 2x" type="image/webp" />
+                <img src="/img//accompaniment/bg.jpg" srcset="/img//accompaniment/bg_2x.jpg 2x" loading="lazy" alt="" />
+              </picture>
+            </div>
+          </div>
+          <div class="service-popup__body">
+            <ul class="service-popup__list">
+              <li class="service-popup__item item-service-popup">
+                <h3 class="item-service-popup__title">Сделки с недвижимостью</h3>
+                <div class="item-service-popup__text">
+                  <p>Структурирование сделок по приобретению и продаже недвижимого имущества, приобретение прав на
+                    земельные участки из
+                    государственной/муниципальной собственности, Due diligence на стороне покупателя или продавца,
+                    подготовка рекомендаций
+                    по минимизации рисков.
+                  </p>
+                </div>
+              </li>
+              <li class="service-popup__item item-service-popup">
+                <h3 class="item-service-popup__title">Аренда недвижимости</h3>
+                <div class="item-service-popup__text">
+                  <p>Сопровождение сделок по аренде, представление интересов клиента в судебных спорах по аренде.
+                    Девелопмент и
+                    строительство. Инвестиционные проекты. (правовая поддержка при реализации строительных проектов
+                    на незастроенных и застроенных земельных участках)</p>
+                </div>
+              </li>
+              <li class="service-popup__item item-service-popup">
+                <h3 class="item-service-popup__title">Консультирование</h3>
+                <ul class="item-service-popup__sub-list">
+                  <li class="item-service-popup__sub-item">Консультирование по договорам подряда, как по российскому,
+                    так и по иностранному праву</li>
+                  <li class="item-service-popup__sub-item">Консультирование по вопросам получения необходимых разрешений
+                    и согласований для строительства</li>
+                  <li class="item-service-popup__sub-item">Проведение переговоров с регулирующими органами, а также
+                    оспаривание их действий в неблагоприятных для клиентов ситуациях</li>
+                  <li class="item-service-popup__sub-item">Консультирование по всем вопросам, связанным с образованием
+                    земельных участков, их разделением, объединением и изменением границ</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="service-popup__footer footer-service-popup">
+            <h3 class="footer-service-popup__title">Контакты</h3>
+            <div class="footer-service-popup__body">
+              <a class="footer-service-popup__link big-phone" href="tel:84959259554">8 495 925-95-54</a>
+              <a class="footer-service-popup__link grey-email" href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="team" aria-hidden="true">
+  <div class="popup__wrapper">
+    <div class="popup__content popup__content--service">
+      <button type="button" class="popup__close" aria-label="Закрыть модальное окно" data-popup-close></button>
+      <div class="popup__team team-popup">
+        <div class="team-popup__body">
+          <div class="team-popup__items">
+            <div class="team-popup__row">
+              <div class="team-popup__left">
+                <div class="team-popup__block">
+                  <div class="team-popup__prof">Младший юрист</div>
+                  <h3 class="team-popup__name">Айдар <br> Марадулин</h3>
+                </div>
+                <div class="team-popup__item item-team-popup">
+                  <h4 class="item-team-popup__title">Специализация</h4>
+                  <div class="item-team-popup__text">
+                    <p>
+                      Айдар занимается подготовкой правовых позиций в сферах коммерческого, интеллектуального права, а
+                      также в рамках
+                      разрешения споров по договорам поставки, подряда и оказания услуг. Кроме этого осуществляет
+                      аналитическую работу и
+                      подготовку правовых заключений по различным вопросам, оказывает помощь
+                      в составлении договоров.
+                    </p>
+                    <p>
+                      Представляет интересы физических
+                      и юридических лиц в арбитражных судах
+                      (по делам по банкротству), судах общей юрисдикции и в административных органах.
+                      Обладает ценным опытом ведения переговоров между сторонами
+                      по разрешению споров.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-popup__info info-team-popup">
+                <div class="info-team-popup__image">
+                  <picture>
+                    <source srcset="/img/team/01.webp, img/team/01_2x.webp 2x" type="image/webp" />
+                    <img src="/img/team/01.png" srcset="/img/team/01_2x.png 2x" loading="lazy" alt="" />
+                  </picture>
+                </div>
+                <div class="info-team-popup__contacts contacts-team-popup" data-da=".team-popup__body, 991.98, 3">
+                  <div class="contacts-team-popup__body">
+                    <h4 class="contacts-team-popup__title">Контакты</h4>
+                    <div class="contacts-team-popup__links">
+                      <a class="contacts-team-popup__link-phone" href="tel:84959259554">8 495 925-95-54</a>
+                      <a class="contacts-team-popup__link-email"
+                        href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+                    </div>
+                    <div class="contacts-team-popup__socials socials">
+                      <a class="socials__link" href="#" target="_blank" aria-label="Ватсап">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0 16C0.171967 15.3712 0.335585 14.7742 0.498536 14.1768C0.695213 13.4562 0.894226 12.736 1.08489 12.0137C1.10353 11.936 1.09456 11.8542 1.05951 11.7823C0.291508 10.3879 -0.0424073 8.8926 0.091159 7.31251C0.282493 5.05056 1.27689 3.19265 3.03296 1.75247C4.00965 0.948143 5.1716 0.400223 6.41352 0.158356C10.124 -0.579599 13.6929 1.31905 15.2219 4.65754C15.7925 5.90538 16.0089 7.21767 15.9027 8.57972C15.6359 12.0054 13.1025 14.9211 9.748 15.6691C7.85704 16.0905 6.04822 15.8431 4.32154 14.9679C4.24451 14.9322 4.15779 14.9233 4.07511 14.9425C2.78386 15.2764 1.49394 15.6143 0.204022 15.9519C0.146589 15.9659 0.0888216 15.9786 0 16ZM1.91534 14.106C1.99147 14.0877 2.04891 14.0746 2.10601 14.0596C2.80723 13.8763 3.50845 13.6966 4.20968 13.5056C4.35126 13.4672 4.45844 13.489 4.58199 13.5621C6.11032 14.4677 7.74484 14.7358 9.47953 14.3454C13.186 13.5107 15.4302 9.60384 14.2879 5.98285C13.2471 2.68443 9.95369 0.773763 6.56578 1.50838C3.77158 2.11577 1.55772 4.56271 1.41814 7.64976C1.36037 8.92599 1.64053 10.1348 2.30836 11.2267C2.51973 11.5723 2.55679 11.8611 2.43291 12.2371C2.23356 12.8442 2.08864 13.4696 1.91534 14.106Z"
+                            fill="#1F232F" />
+                          <path
+                            d="M3.95117 6.14593C3.96286 5.48344 4.22164 4.93849 4.68946 4.48403C4.75743 4.41419 4.8389 4.3589 4.92891 4.32153C5.01892 4.28416 5.11559 4.26549 5.21304 4.26665C5.32423 4.26665 5.43643 4.28335 5.54695 4.27233C5.78069 4.24929 5.91426 4.36416 5.99607 4.56284C6.21579 5.08909 6.44285 5.61267 6.6472 6.14493C6.68427 6.24143 6.66256 6.3957 6.60713 6.48552C6.4567 6.71803 6.29211 6.94107 6.11428 7.15336C6.00809 7.28492 5.99941 7.40179 6.08522 7.54604C6.73202 8.63194 7.63125 9.42165 8.81031 9.88746C8.96992 9.95057 9.10015 9.92553 9.20934 9.78728C9.40568 9.53952 9.61004 9.29843 9.8017 9.04633C9.91189 8.9004 10.0408 8.84597 10.2044 8.92144C10.7721 9.18857 11.3357 9.45571 11.8957 9.73586C11.9545 9.76525 12.0089 9.86475 12.0112 9.93387C12.0339 10.5232 11.8626 11.0168 11.3374 11.3604C10.6836 11.7878 9.99704 11.8252 9.2671 11.6201C7.39484 11.0946 6.00442 9.92386 4.88814 8.37849C4.52083 7.8676 4.18224 7.34135 4.03933 6.7176C3.99458 6.5316 3.97922 6.33727 3.95117 6.14593Z"
+                            fill="#1F232F" />
+                        </svg>
+                      </a>
+                      <a class="socials__link" href="#" target="_blank" aria-label="Телеграм">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_54_519)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.28662 5.90595C7.5085 6.2296 5.95336 6.89946 3.62119 7.91555C3.24249 8.06615 3.0441 8.21348 3.02604 8.35754C2.99552 8.601 3.30041 8.69687 3.71558 8.82742C3.77205 8.84517 3.83057 8.86357 3.89056 8.88307C4.29902 9.01585 4.84848 9.17118 5.13412 9.17735C5.39323 9.18295 5.68242 9.07613 6.00169 8.85689C8.1807 7.386 9.30552 6.64254 9.37614 6.62651C9.42596 6.6152 9.495 6.60099 9.54178 6.64256C9.58855 6.68414 9.58395 6.76288 9.579 6.784C9.5488 6.91276 8.352 8.02541 7.73267 8.6012C7.5396 8.78069 7.40265 8.90801 7.37465 8.93709C7.31193 9.00223 7.24802 9.06385 7.18658 9.12307C6.80711 9.48889 6.52254 9.76321 7.20234 10.2112C7.52902 10.4265 7.79043 10.6045 8.05123 10.7821C8.33604 10.9761 8.62012 11.1695 8.98767 11.4104C9.08132 11.4718 9.17075 11.5356 9.25786 11.5977C9.58931 11.834 9.8871 12.0463 10.255 12.0124C10.4688 11.9928 10.6896 11.7917 10.8017 11.1922C11.0667 9.77543 11.5877 6.70564 11.7081 5.44065C11.7186 5.32982 11.7054 5.18798 11.6947 5.12572C11.684 5.06345 11.6618 4.97474 11.5808 4.90907C11.485 4.83129 11.337 4.81489 11.2708 4.81606C10.9699 4.82136 10.5083 4.98188 8.28662 5.90595Z"
+                              fill="#1F232F" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_54_519">
+                              <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                      <a class="socials__link" href="#" target="_blank" aria-label="Вконтакте">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_54_522)">
+                            <path
+                              d="M14.8767 1.12333C13.75 0 11.94 0 8.33333 0H7.66667C4.06 0 2.25 0 1.12333 1.12333C-0.00333333 2.24667 1.15348e-07 4.06 1.15348e-07 7.66667V8.33333C1.15348e-07 11.94 7.94729e-08 13.75 1.12333 14.8767C2.24667 16.0033 4.06 16 7.66667 16H8.33333C11.9533 16 13.7633 16 14.89 14.8767C16.0167 13.7533 16 11.94 16 8.33333V7.66667C16 4.06 16 2.25 14.8767 1.12333ZM11.48 11.5267C11.3057 10.9021 10.9507 10.343 10.4597 9.91959C9.96861 9.49615 9.36338 9.22725 8.72 9.14667V11.5267H8.51333C4.86667 11.5267 2.78667 9.02667 2.7 4.86H4.52667C4.58667 7.91333 5.93333 9.19333 7 9.47333V4.86667H8.72V7.5C9.77333 7.38667 10.88 6.18667 11.2533 4.86667H12.9733C12.8351 5.55309 12.5565 6.20353 12.155 6.77715C11.7534 7.35077 11.2377 7.83519 10.64 8.2C11.3063 8.53048 11.895 8.99842 12.3673 9.57298C12.8396 10.1475 13.1847 10.8157 13.38 11.5333L11.48 11.5267Z"
+                              fill="#1F232F" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_54_522">
+                              <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-popup__items team-popup__items--pad">
+            <div class="team-popup__item item-team-popup">
+              <h4 class="item-team-popup__title">Образование</h4>
+              <div class="item-team-popup__text">
+                <p>
+                  Айдар занимается подготовкой правовых позиций в сферах коммерческого, интеллектуального права, а
+                  также в рамках
+                  разрешения споров по договорам поставки, подряда и оказания услуг. Кроме этого осуществляет
+                  аналитическую работу и
+                  подготовку правовых заключений по различным вопросам, оказывает помощь
+                  в составлении договоров.
+                </p>
+                <p>
+                  Представляет интересы физических
+                  и юридических лиц в арбитражных судах
+                  (по делам по банкротству), судах общей юрисдикции и в административных органах.
+                  Обладает ценным опытом ведения переговоров между сторонами
+                  по разрешению споров.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="team-popup__items team-popup__items--pad">
+            <div class="team-popup__item item-team-popup">
+              <div class="item-team-popup__top">
+                <h4 class="item-team-popup__title">Проекты</h4>
+                <div class="item-team-popup__controlls controlls-team-popup">
+                  <button type="button" class="controlls-team-popup__arrow controlls-team-popup__arrow--prev"
+                    aria-lavbel="Предыдущий слайд">
+                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.49954 14.6L1.06621 9.16669C0.424544 8.52502 0.424544 7.47503 1.06621 6.83336L6.49954 1.40002"
+                        stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button type="button" class="controlls-team-popup__arrow controlls-team-popup__arrow--next"
+                    aria-lavbel="Следующий слайд">
+                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.4248 14.6L6.85814 9.16669C7.49981 8.52502 7.49981 7.47503 6.85814 6.83336L1.4248 1.40002"
+                        stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="item-team-popup__projects projects-slider">
+                <div class="projects-slider__slider swiper">
+                  <div class="projects-slider__wrapper swiper-wrapper">
+                    <div class="projects-slider__slide swiper-slide">
+                      <div class="projects-slider__item item-cases">
+                        <div class="item-cases__top">
+                          <h3 class="item-cases__title">Представление интересов крупнейшей российской компании,
+                            реализующей комиссионный продукт</h3>
+                        </div>
+                        <div class="item-cases__body item-cases__body--popup">
+                          <div class="item-cases__label">Задача</div>
+                          <div class="item-cases__descr">
+                            <p>Долгосрочное юридическое сопровождения компании , предоставляющей услуги по выдаче
+                              независимой гарантии банкам России.</p>
+                          </div>
+                        </div>
+                        <a class="item-cases__link button" href="#">смотреть</a>
+                      </div>
+                    </div>
+                    <div class="projects-slider__slide swiper-slide">
+                      <div class="projects-slider__item item-cases">
+                        <div class="item-cases__top">
+                          <h3 class="item-cases__title">Представление интересов крупнейшей российской компании,
+                            реализующей комиссионный продукт</h3>
+                        </div>
+                        <div class="item-cases__body item-cases__body--popup">
+                          <div class="item-cases__label">Задача</div>
+                          <div class="item-cases__descr">
+                            <p>Долгосрочное юридическое сопровождения компании , предоставляющей услуги по выдаче
+                              независимой гарантии банкам России.</p>
+                          </div>
+                        </div>
+                        <a class="item-cases__link button" href="#">смотреть</a>
+                      </div>
+                    </div>
+                    <div class="projects-slider__slide swiper-slide">
+                      <div class="projects-slider__item item-cases">
+                        <div class="item-cases__top">
+                          <h3 class="item-cases__title">Представление интересов крупнейшей российской компании,
+                            реализующей комиссионный продукт</h3>
+                        </div>
+                        <div class="item-cases__body item-cases__body--popup">
+                          <div class="item-cases__label">Задача</div>
+                          <div class="item-cases__descr">
+                            <p>Долгосрочное юридическое сопровождения компании , предоставляющей услуги по выдаче
+                              независимой гарантии банкам России.</p>
+                          </div>
+                        </div>
+                        <a class="item-cases__link button" href="#">смотреть</a>
+                      </div>
+                    </div>
+                    <div class="projects-slider__slide swiper-slide">
+                      <div class="projects-slider__item item-cases">
+                        <div class="item-cases__top">
+                          <h3 class="item-cases__title">Представление интересов крупнейшей российской компании,
+                            реализующей комиссионный продукт</h3>
+                        </div>
+                        <div class="item-cases__body item-cases__body--popup">
+                          <div class="item-cases__label">Задача</div>
+                          <div class="item-cases__descr">
+                            <p>Долгосрочное юридическое сопровождения компании , предоставляющей услуги по выдаче
+                              независимой гарантии банкам России.</p>
+                          </div>
+                        </div>
+                        <a class="item-cases__link button" href="#">смотреть</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><footer class="footer">
+  <div class="footer__container">
+    <div class="footer__body">
+      <div class="footer__info info-footer">
+        <div class="info-footer__contact">
+          <a class="info-footer__link-phone big-phone" href="tel:84959259554">8 495 925-95-54</a>
+          <a class="info-footer__link-email grey-email" href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+        </div>
+        <div class="info-footer__address address-info-footer">
+          <div class="address-info-footer__label">Адрес альянса</div>
+          <div class="address-info-footer__body">
+            <div class="address-info-footer__inner">
+              <div class="address-info-footer__address">Москва, ул. Николоямская, д. 48, строение 2</div>
+              <div class="address-info-footer__hourse">Мы открыты с 10:00 до 19:00, воскресенье выходной</div>
+            </div>
+            <a class="address-info-footer__link" href="#">НА карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__block block-footer">
+        <a class="block-footer__logo" href="#">
+          <img src="/img/header/logo.svg" alt="Логотип компании">
+        </a>
+        <div class="block-footer__socials socials">
+          <a class="socials__link" href="#" target="_blank" aria-label="Ватсап">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 16C0.171967 15.3712 0.335585 14.7742 0.498536 14.1768C0.695213 13.4562 0.894226 12.736 1.08489 12.0137C1.10353 11.936 1.09456 11.8542 1.05951 11.7823C0.291508 10.3879 -0.0424073 8.8926 0.091159 7.31251C0.282493 5.05056 1.27689 3.19265 3.03296 1.75247C4.00965 0.948143 5.1716 0.400223 6.41352 0.158356C10.124 -0.579599 13.6929 1.31905 15.2219 4.65754C15.7925 5.90538 16.0089 7.21767 15.9027 8.57972C15.6359 12.0054 13.1025 14.9211 9.748 15.6691C7.85704 16.0905 6.04822 15.8431 4.32154 14.9679C4.24451 14.9322 4.15779 14.9233 4.07511 14.9425C2.78386 15.2764 1.49394 15.6143 0.204022 15.9519C0.146589 15.9659 0.0888216 15.9786 0 16ZM1.91534 14.106C1.99147 14.0877 2.04891 14.0746 2.10601 14.0596C2.80723 13.8763 3.50845 13.6966 4.20968 13.5056C4.35126 13.4672 4.45844 13.489 4.58199 13.5621C6.11032 14.4677 7.74484 14.7358 9.47953 14.3454C13.186 13.5107 15.4302 9.60384 14.2879 5.98285C13.2471 2.68443 9.95369 0.773763 6.56578 1.50838C3.77158 2.11577 1.55772 4.56271 1.41814 7.64976C1.36037 8.92599 1.64053 10.1348 2.30836 11.2267C2.51973 11.5723 2.55679 11.8611 2.43291 12.2371C2.23356 12.8442 2.08864 13.4696 1.91534 14.106Z"
+                fill="#1F232F" />
+              <path
+                d="M3.95117 6.14593C3.96286 5.48344 4.22164 4.93849 4.68946 4.48403C4.75743 4.41419 4.8389 4.3589 4.92891 4.32153C5.01892 4.28416 5.11559 4.26549 5.21304 4.26665C5.32423 4.26665 5.43643 4.28335 5.54695 4.27233C5.78069 4.24929 5.91426 4.36416 5.99607 4.56284C6.21579 5.08909 6.44285 5.61267 6.6472 6.14493C6.68427 6.24143 6.66256 6.3957 6.60713 6.48552C6.4567 6.71803 6.29211 6.94107 6.11428 7.15336C6.00809 7.28492 5.99941 7.40179 6.08522 7.54604C6.73202 8.63194 7.63125 9.42165 8.81031 9.88746C8.96992 9.95057 9.10015 9.92553 9.20934 9.78728C9.40568 9.53952 9.61004 9.29843 9.8017 9.04633C9.91189 8.9004 10.0408 8.84597 10.2044 8.92144C10.7721 9.18857 11.3357 9.45571 11.8957 9.73586C11.9545 9.76525 12.0089 9.86475 12.0112 9.93387C12.0339 10.5232 11.8626 11.0168 11.3374 11.3604C10.6836 11.7878 9.99704 11.8252 9.2671 11.6201C7.39484 11.0946 6.00442 9.92386 4.88814 8.37849C4.52083 7.8676 4.18224 7.34135 4.03933 6.7176C3.99458 6.5316 3.97922 6.33727 3.95117 6.14593Z"
+                fill="#1F232F" />
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Телеграм">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_54_519)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.28662 5.90595C7.5085 6.2296 5.95336 6.89946 3.62119 7.91555C3.24249 8.06615 3.0441 8.21348 3.02604 8.35754C2.99552 8.601 3.30041 8.69687 3.71558 8.82742C3.77205 8.84517 3.83057 8.86357 3.89056 8.88307C4.29902 9.01585 4.84848 9.17118 5.13412 9.17735C5.39323 9.18295 5.68242 9.07613 6.00169 8.85689C8.1807 7.386 9.30552 6.64254 9.37614 6.62651C9.42596 6.6152 9.495 6.60099 9.54178 6.64256C9.58855 6.68414 9.58395 6.76288 9.579 6.784C9.5488 6.91276 8.352 8.02541 7.73267 8.6012C7.5396 8.78069 7.40265 8.90801 7.37465 8.93709C7.31193 9.00223 7.24802 9.06385 7.18658 9.12307C6.80711 9.48889 6.52254 9.76321 7.20234 10.2112C7.52902 10.4265 7.79043 10.6045 8.05123 10.7821C8.33604 10.9761 8.62012 11.1695 8.98767 11.4104C9.08132 11.4718 9.17075 11.5356 9.25786 11.5977C9.58931 11.834 9.8871 12.0463 10.255 12.0124C10.4688 11.9928 10.6896 11.7917 10.8017 11.1922C11.0667 9.77543 11.5877 6.70564 11.7081 5.44065C11.7186 5.32982 11.7054 5.18798 11.6947 5.12572C11.684 5.06345 11.6618 4.97474 11.5808 4.90907C11.485 4.83129 11.337 4.81489 11.2708 4.81606C10.9699 4.82136 10.5083 4.98188 8.28662 5.90595Z"
+                  fill="#1F232F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_54_519">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Вконтакте">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_54_522)">
+                <path
+                  d="M14.8767 1.12333C13.75 0 11.94 0 8.33333 0H7.66667C4.06 0 2.25 0 1.12333 1.12333C-0.00333333 2.24667 1.15348e-07 4.06 1.15348e-07 7.66667V8.33333C1.15348e-07 11.94 7.94729e-08 13.75 1.12333 14.8767C2.24667 16.0033 4.06 16 7.66667 16H8.33333C11.9533 16 13.7633 16 14.89 14.8767C16.0167 13.7533 16 11.94 16 8.33333V7.66667C16 4.06 16 2.25 14.8767 1.12333ZM11.48 11.5267C11.3057 10.9021 10.9507 10.343 10.4597 9.91959C9.96861 9.49615 9.36338 9.22725 8.72 9.14667V11.5267H8.51333C4.86667 11.5267 2.78667 9.02667 2.7 4.86H4.52667C4.58667 7.91333 5.93333 9.19333 7 9.47333V4.86667H8.72V7.5C9.77333 7.38667 10.88 6.18667 11.2533 4.86667H12.9733C12.8351 5.55309 12.5565 6.20353 12.155 6.77715C11.7534 7.35077 11.2377 7.83519 10.64 8.2C11.3063 8.53048 11.895 8.99842 12.3673 9.57298C12.8396 10.1475 13.1847 10.8157 13.38 11.5333L11.48 11.5267Z"
+                  fill="#1F232F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_54_522">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Ютуб">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.8406 4.79995C15.8406 4.79995 15.6844 3.69683 15.2031 3.21245C14.5938 2.57495 13.9125 2.57183 13.6 2.53433C11.3625 2.37183 8.00313 2.37183 8.00313 2.37183H7.99687C7.99687 2.37183 4.6375 2.37183 2.4 2.53433C2.0875 2.57183 1.40625 2.57495 0.796875 3.21245C0.315625 3.69683 0.1625 4.79995 0.1625 4.79995C0.1625 4.79995 0 6.09683 0 7.39058V8.60308C0 9.89683 0.159375 11.1937 0.159375 11.1937C0.159375 11.1937 0.315625 12.2968 0.79375 12.7812C1.40313 13.4187 2.20313 13.3968 2.55938 13.4656C3.84063 13.5875 8 13.625 8 13.625C8 13.625 11.3625 13.6187 13.6 13.4593C13.9125 13.4218 14.5938 13.4187 15.2031 12.7812C15.6844 12.2968 15.8406 11.1937 15.8406 11.1937C15.8406 11.1937 16 9.89995 16 8.60308V7.39058C16 6.09683 15.8406 4.79995 15.8406 4.79995ZM6.34688 10.075V5.57808L10.6687 7.83433L6.34688 10.075Z"
+                fill="#1F232F" />
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Инстаграм">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_54_513)">
+                <path
+                  d="M8 1.44062C10.1375 1.44062 10.3906 1.45 11.2313 1.4875C12.0125 1.52187 12.4344 1.65313 12.7156 1.7625C13.0875 1.90625 13.3563 2.08125 13.6344 2.35937C13.9156 2.64062 14.0875 2.90625 14.2313 3.27812C14.3406 3.55937 14.4719 3.98437 14.5063 4.7625C14.5438 5.60625 14.5531 5.85937 14.5531 7.99375C14.5531 10.1312 14.5438 10.3844 14.5063 11.225C14.4719 12.0063 14.3406 12.4281 14.2313 12.7094C14.0875 13.0813 13.9125 13.35 13.6344 13.6281C13.3531 13.9094 13.0875 14.0813 12.7156 14.225C12.4344 14.3344 12.0094 14.4656 11.2313 14.5C10.3875 14.5375 10.1344 14.5469 8 14.5469C5.8625 14.5469 5.60938 14.5375 4.76875 14.5C3.9875 14.4656 3.56563 14.3344 3.28438 14.225C2.9125 14.0813 2.64375 13.9062 2.36563 13.6281C2.08438 13.3469 1.9125 13.0813 1.76875 12.7094C1.65938 12.4281 1.52813 12.0031 1.49375 11.225C1.45625 10.3813 1.44688 10.1281 1.44688 7.99375C1.44688 5.85625 1.45625 5.60312 1.49375 4.7625C1.52813 3.98125 1.65938 3.55937 1.76875 3.27812C1.9125 2.90625 2.0875 2.6375 2.36563 2.35937C2.64688 2.07812 2.9125 1.90625 3.28438 1.7625C3.56563 1.65313 3.99063 1.52187 4.76875 1.4875C5.60938 1.45 5.8625 1.44062 8 1.44062ZM8 0C5.82813 0 5.55625 0.009375 4.70313 0.046875C3.85313 0.084375 3.26875 0.221875 2.7625 0.41875C2.23438 0.625 1.7875 0.896875 1.34375 1.34375C0.896875 1.7875 0.625 2.23438 0.41875 2.75938C0.221875 3.26875 0.084375 3.85 0.046875 4.7C0.009375 5.55625 0 5.82812 0 8C0 10.1719 0.009375 10.4437 0.046875 11.2969C0.084375 12.1469 0.221875 12.7312 0.41875 13.2375C0.625 13.7656 0.896875 14.2125 1.34375 14.6562C1.7875 15.1 2.23438 15.375 2.75938 15.5781C3.26875 15.775 3.85 15.9125 4.7 15.95C5.55313 15.9875 5.825 15.9969 7.99688 15.9969C10.1688 15.9969 10.4406 15.9875 11.2938 15.95C12.1438 15.9125 12.7281 15.775 13.2344 15.5781C13.7594 15.375 14.2063 15.1 14.65 14.6562C15.0938 14.2125 15.3688 13.7656 15.5719 13.2406C15.7688 12.7313 15.9063 12.15 15.9438 11.3C15.9813 10.4469 15.9906 10.175 15.9906 8.00313C15.9906 5.83125 15.9813 5.55937 15.9438 4.70625C15.9063 3.85625 15.7688 3.27187 15.5719 2.76562C15.375 2.23437 15.1031 1.7875 14.6563 1.34375C14.2125 0.9 13.7656 0.625 13.2406 0.421875C12.7313 0.225 12.15 0.0875 11.3 0.05C10.4438 0.009375 10.1719 0 8 0Z"
+                  fill="#1F232F" />
+                <path
+                  d="M8 3.89062C5.73125 3.89062 3.89062 5.73125 3.89062 8C3.89062 10.2688 5.73125 12.1094 8 12.1094C10.2688 12.1094 12.1094 10.2688 12.1094 8C12.1094 5.73125 10.2688 3.89062 8 3.89062ZM8 10.6656C6.52813 10.6656 5.33437 9.47188 5.33437 8C5.33437 6.52813 6.52813 5.33437 8 5.33437C9.47188 5.33437 10.6656 6.52813 10.6656 8C10.6656 9.47188 9.47188 10.6656 8 10.6656Z"
+                  fill="#1F232F" />
+                <path
+                  d="M13.2312 3.72817C13.2312 4.25943 12.8 4.68755 12.2719 4.68755C11.7406 4.68755 11.3125 4.2563 11.3125 3.72817C11.3125 3.19692 11.7438 2.7688 12.2719 2.7688C12.8 2.7688 13.2312 3.20005 13.2312 3.72817Z"
+                  fill="#1F232F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_54_513">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom bottom-footer">
+      <div class="bottom-footer__info bottom-footer__text">ИНН 9721032703, ОГРН 5167746462923, КПП 770901001</div>
+      <div class="bottom-footer__row">
+        <a class="bottom-footer__text">© 2001-2023 Официальный сайт «Профессиональный правовой альянс"». Все права
+          защищены</a>
+        <a class="bottom-footer__link bottom-footer__text" href="#">Политика конфиденциальности</a>
+        <a class="bottom-footer__link bottom-footer__text" href="#">Карта сайта</a>
+      </div>
+    </div>
+  </div>
+</footer>  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

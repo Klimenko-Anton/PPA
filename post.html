@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Пост</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+<header class="header" data-lp>
+  <div class="header__container">
+    <div class="header__body">
+      <a class="header__logo" href="#">
+        <img src="/img/header/logo.svg" alt="Логотип компании">
+      </a>
+      <div class="header__menu menu">
+        <div class="menu__inner">
+          <a class="menu__logo-mobile" href="#">
+            <img src="/img/header/logo.svg" alt="Логотип компании">
+          </a>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="" class="menu__link">услуги</a></li>
+              <li class="menu__item"><a href="" class="menu__link">О ФИРМЕ</a></li>
+              <li class="menu__item"><a href="" class="menu__link">кейсы</a></li>
+              <li class="menu__item"><a href="" class="menu__link">команда</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+              <li class="menu__item"><a href="" class="menu__link">медиа</a></li>
+              <li class="menu__item"><a href="" class="menu__link">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="menu__mobile-info mobile-info-menu">
+            <div class="mobile-info-menu__body">
+              <div class="mobile-info-menu__links">
+                <a class="mobile-info-menu__link-phone" href="tel:84959259554">8 495 925-95-54</a>
+                <a class="mobile-info-menu__link-email" href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+              </div>
+              <div class="mobile-info-menu__address">Москва, ул. Николоямская, д. 48, строение 2</div>
+              <div class="mobile-info-menu__socials socials">
+                <a class="socials__link" href="#" target="_blank" aria-label="Ватсап">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 16C0.171967 15.3712 0.335585 14.7742 0.498536 14.1768C0.695213 13.4562 0.894226 12.736 1.08489 12.0137C1.10353 11.936 1.09456 11.8542 1.05951 11.7823C0.291508 10.3879 -0.0424073 8.8926 0.091159 7.31251C0.282493 5.05056 1.27689 3.19265 3.03296 1.75247C4.00965 0.948143 5.1716 0.400223 6.41352 0.158356C10.124 -0.579599 13.6929 1.31905 15.2219 4.65754C15.7925 5.90538 16.0089 7.21767 15.9027 8.57972C15.6359 12.0054 13.1025 14.9211 9.748 15.6691C7.85704 16.0905 6.04822 15.8431 4.32154 14.9679C4.24451 14.9322 4.15779 14.9233 4.07511 14.9425C2.78386 15.2764 1.49394 15.6143 0.204022 15.9519C0.146589 15.9659 0.0888216 15.9786 0 16ZM1.91534 14.106C1.99147 14.0877 2.04891 14.0746 2.10601 14.0596C2.80723 13.8763 3.50845 13.6966 4.20968 13.5056C4.35126 13.4672 4.45844 13.489 4.58199 13.5621C6.11032 14.4677 7.74484 14.7358 9.47953 14.3454C13.186 13.5107 15.4302 9.60384 14.2879 5.98285C13.2471 2.68443 9.95369 0.773763 6.56578 1.50838C3.77158 2.11577 1.55772 4.56271 1.41814 7.64976C1.36037 8.92599 1.64053 10.1348 2.30836 11.2267C2.51973 11.5723 2.55679 11.8611 2.43291 12.2371C2.23356 12.8442 2.08864 13.4696 1.91534 14.106Z"
+                      fill="#1F232F" />
+                    <path
+                      d="M3.95117 6.14593C3.96286 5.48344 4.22164 4.93849 4.68946 4.48403C4.75743 4.41419 4.8389 4.3589 4.92891 4.32153C5.01892 4.28416 5.11559 4.26549 5.21304 4.26665C5.32423 4.26665 5.43643 4.28335 5.54695 4.27233C5.78069 4.24929 5.91426 4.36416 5.99607 4.56284C6.21579 5.08909 6.44285 5.61267 6.6472 6.14493C6.68427 6.24143 6.66256 6.3957 6.60713 6.48552C6.4567 6.71803 6.29211 6.94107 6.11428 7.15336C6.00809 7.28492 5.99941 7.40179 6.08522 7.54604C6.73202 8.63194 7.63125 9.42165 8.81031 9.88746C8.96992 9.95057 9.10015 9.92553 9.20934 9.78728C9.40568 9.53952 9.61004 9.29843 9.8017 9.04633C9.91189 8.9004 10.0408 8.84597 10.2044 8.92144C10.7721 9.18857 11.3357 9.45571 11.8957 9.73586C11.9545 9.76525 12.0089 9.86475 12.0112 9.93387C12.0339 10.5232 11.8626 11.0168 11.3374 11.3604C10.6836 11.7878 9.99704 11.8252 9.2671 11.6201C7.39484 11.0946 6.00442 9.92386 4.88814 8.37849C4.52083 7.8676 4.18224 7.34135 4.03933 6.7176C3.99458 6.5316 3.97922 6.33727 3.95117 6.14593Z"
+                      fill="#1F232F" />
+                  </svg>
+                </a>
+                <a class="socials__link" href="#" target="_blank" aria-label="Телеграм">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_54_519)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.28662 5.90595C7.5085 6.2296 5.95336 6.89946 3.62119 7.91555C3.24249 8.06615 3.0441 8.21348 3.02604 8.35754C2.99552 8.601 3.30041 8.69687 3.71558 8.82742C3.77205 8.84517 3.83057 8.86357 3.89056 8.88307C4.29902 9.01585 4.84848 9.17118 5.13412 9.17735C5.39323 9.18295 5.68242 9.07613 6.00169 8.85689C8.1807 7.386 9.30552 6.64254 9.37614 6.62651C9.42596 6.6152 9.495 6.60099 9.54178 6.64256C9.58855 6.68414 9.58395 6.76288 9.579 6.784C9.5488 6.91276 8.352 8.02541 7.73267 8.6012C7.5396 8.78069 7.40265 8.90801 7.37465 8.93709C7.31193 9.00223 7.24802 9.06385 7.18658 9.12307C6.80711 9.48889 6.52254 9.76321 7.20234 10.2112C7.52902 10.4265 7.79043 10.6045 8.05123 10.7821C8.33604 10.9761 8.62012 11.1695 8.98767 11.4104C9.08132 11.4718 9.17075 11.5356 9.25786 11.5977C9.58931 11.834 9.8871 12.0463 10.255 12.0124C10.4688 11.9928 10.6896 11.7917 10.8017 11.1922C11.0667 9.77543 11.5877 6.70564 11.7081 5.44065C11.7186 5.32982 11.7054 5.18798 11.6947 5.12572C11.684 5.06345 11.6618 4.97474 11.5808 4.90907C11.485 4.83129 11.337 4.81489 11.2708 4.81606C10.9699 4.82136 10.5083 4.98188 8.28662 5.90595Z"
+                        fill="#1F232F" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_54_519">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="socials__link" href="#" target="_blank" aria-label="Вконтакте">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_54_522)">
+                      <path
+                        d="M14.8767 1.12333C13.75 0 11.94 0 8.33333 0H7.66667C4.06 0 2.25 0 1.12333 1.12333C-0.00333333 2.24667 1.15348e-07 4.06 1.15348e-07 7.66667V8.33333C1.15348e-07 11.94 7.94729e-08 13.75 1.12333 14.8767C2.24667 16.0033 4.06 16 7.66667 16H8.33333C11.9533 16 13.7633 16 14.89 14.8767C16.0167 13.7533 16 11.94 16 8.33333V7.66667C16 4.06 16 2.25 14.8767 1.12333ZM11.48 11.5267C11.3057 10.9021 10.9507 10.343 10.4597 9.91959C9.96861 9.49615 9.36338 9.22725 8.72 9.14667V11.5267H8.51333C4.86667 11.5267 2.78667 9.02667 2.7 4.86H4.52667C4.58667 7.91333 5.93333 9.19333 7 9.47333V4.86667H8.72V7.5C9.77333 7.38667 10.88 6.18667 11.2533 4.86667H12.9733C12.8351 5.55309 12.5565 6.20353 12.155 6.77715C11.7534 7.35077 11.2377 7.83519 10.64 8.2C11.3063 8.53048 11.895 8.99842 12.3673 9.57298C12.8396 10.1475 13.1847 10.8157 13.38 11.5333L11.48 11.5267Z"
+                        fill="#1F232F" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_54_522">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="socials__link" href="#" target="_blank" aria-label="Ютуб">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.8406 4.79995C15.8406 4.79995 15.6844 3.69683 15.2031 3.21245C14.5938 2.57495 13.9125 2.57183 13.6 2.53433C11.3625 2.37183 8.00313 2.37183 8.00313 2.37183H7.99687C7.99687 2.37183 4.6375 2.37183 2.4 2.53433C2.0875 2.57183 1.40625 2.57495 0.796875 3.21245C0.315625 3.69683 0.1625 4.79995 0.1625 4.79995C0.1625 4.79995 0 6.09683 0 7.39058V8.60308C0 9.89683 0.159375 11.1937 0.159375 11.1937C0.159375 11.1937 0.315625 12.2968 0.79375 12.7812C1.40313 13.4187 2.20313 13.3968 2.55938 13.4656C3.84063 13.5875 8 13.625 8 13.625C8 13.625 11.3625 13.6187 13.6 13.4593C13.9125 13.4218 14.5938 13.4187 15.2031 12.7812C15.6844 12.2968 15.8406 11.1937 15.8406 11.1937C15.8406 11.1937 16 9.89995 16 8.60308V7.39058C16 6.09683 15.8406 4.79995 15.8406 4.79995ZM6.34688 10.075V5.57808L10.6687 7.83433L6.34688 10.075Z"
+                      fill="#1F232F" />
+                  </svg>
+                </a>
+                <a class="socials__link" href="#" target="_blank" aria-label="Инстаграм">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_54_513)">
+                      <path
+                        d="M8 1.44062C10.1375 1.44062 10.3906 1.45 11.2313 1.4875C12.0125 1.52187 12.4344 1.65313 12.7156 1.7625C13.0875 1.90625 13.3563 2.08125 13.6344 2.35937C13.9156 2.64062 14.0875 2.90625 14.2313 3.27812C14.3406 3.55937 14.4719 3.98437 14.5063 4.7625C14.5438 5.60625 14.5531 5.85937 14.5531 7.99375C14.5531 10.1312 14.5438 10.3844 14.5063 11.225C14.4719 12.0063 14.3406 12.4281 14.2313 12.7094C14.0875 13.0813 13.9125 13.35 13.6344 13.6281C13.3531 13.9094 13.0875 14.0813 12.7156 14.225C12.4344 14.3344 12.0094 14.4656 11.2313 14.5C10.3875 14.5375 10.1344 14.5469 8 14.5469C5.8625 14.5469 5.60938 14.5375 4.76875 14.5C3.9875 14.4656 3.56563 14.3344 3.28438 14.225C2.9125 14.0813 2.64375 13.9062 2.36563 13.6281C2.08438 13.3469 1.9125 13.0813 1.76875 12.7094C1.65938 12.4281 1.52813 12.0031 1.49375 11.225C1.45625 10.3813 1.44688 10.1281 1.44688 7.99375C1.44688 5.85625 1.45625 5.60312 1.49375 4.7625C1.52813 3.98125 1.65938 3.55937 1.76875 3.27812C1.9125 2.90625 2.0875 2.6375 2.36563 2.35937C2.64688 2.07812 2.9125 1.90625 3.28438 1.7625C3.56563 1.65313 3.99063 1.52187 4.76875 1.4875C5.60938 1.45 5.8625 1.44062 8 1.44062ZM8 0C5.82813 0 5.55625 0.009375 4.70313 0.046875C3.85313 0.084375 3.26875 0.221875 2.7625 0.41875C2.23438 0.625 1.7875 0.896875 1.34375 1.34375C0.896875 1.7875 0.625 2.23438 0.41875 2.75938C0.221875 3.26875 0.084375 3.85 0.046875 4.7C0.009375 5.55625 0 5.82812 0 8C0 10.1719 0.009375 10.4437 0.046875 11.2969C0.084375 12.1469 0.221875 12.7312 0.41875 13.2375C0.625 13.7656 0.896875 14.2125 1.34375 14.6562C1.7875 15.1 2.23438 15.375 2.75938 15.5781C3.26875 15.775 3.85 15.9125 4.7 15.95C5.55313 15.9875 5.825 15.9969 7.99688 15.9969C10.1688 15.9969 10.4406 15.9875 11.2938 15.95C12.1438 15.9125 12.7281 15.775 13.2344 15.5781C13.7594 15.375 14.2063 15.1 14.65 14.6562C15.0938 14.2125 15.3688 13.7656 15.5719 13.2406C15.7688 12.7313 15.9063 12.15 15.9438 11.3C15.9813 10.4469 15.9906 10.175 15.9906 8.00313C15.9906 5.83125 15.9813 5.55937 15.9438 4.70625C15.9063 3.85625 15.7688 3.27187 15.5719 2.76562C15.375 2.23437 15.1031 1.7875 14.6563 1.34375C14.2125 0.9 13.7656 0.625 13.2406 0.421875C12.7313 0.225 12.15 0.0875 11.3 0.05C10.4438 0.009375 10.1719 0 8 0Z"
+                        fill="#1F232F" />
+                      <path
+                        d="M8 3.89062C5.73125 3.89062 3.89062 5.73125 3.89062 8C3.89062 10.2688 5.73125 12.1094 8 12.1094C10.2688 12.1094 12.1094 10.2688 12.1094 8C12.1094 5.73125 10.2688 3.89062 8 3.89062ZM8 10.6656C6.52813 10.6656 5.33437 9.47188 5.33437 8C5.33437 6.52813 6.52813 5.33437 8 5.33437C9.47188 5.33437 10.6656 6.52813 10.6656 8C10.6656 9.47188 9.47188 10.6656 8 10.6656Z"
+                        fill="#1F232F" />
+                      <path
+                        d="M13.2312 3.72817C13.2312 4.25943 12.8 4.68755 12.2719 4.68755C11.7406 4.68755 11.3125 4.2563 11.3125 3.72817C11.3125 3.19692 11.7438 2.7688 12.2719 2.7688C12.8 2.7688 13.2312 3.20005 13.2312 3.72817Z"
+                        fill="#1F232F" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_54_513">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__contacts contacts-header">
+        <div class="contacts-header__body">
+          <a class="contacts-header__link-phone" href="tel:84959259554">8 495 925-95-54</a>
+          <a class="contacts-header__link-email" href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+        </div>
+      </div>
+      <button type="button" class="icon-menu" aria-label="Открыть меню"><span></span></button>
+    </div>
+  </div>
+</header>    <main class="page page--post">
+      <div class="post">
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__container">
+            <ol class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">блог</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current">актуальные процессуальные вопросы разрешения споров</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="post__container">
+          <div class="post__wrapper">
+            <div class="post__content content-post">
+              <div class="content-post__top top-content-post">
+                <div class="top-content-post__image-main">
+                  <picture>
+                    <source srcset="/img/publications/01.webp, img/publications/01_2x.webp 2x" type="image/webp" />
+                    <img src="/img/publications/01.jpg" srcset="/img/publications/01_2x.jpg 2x" loading="lazy" alt="" />
+                  </picture>
+                </div>
+                <h1 class="top-content-post__title _title">Актуальные процессуальные вопросы разрешения споров</h1>
+                <div class="top-content-post__row slide-publications__row">
+                  <div class="slide-publications__category">Статья</div>
+                  <div class="slide-publications__date">26 декабря</div>
+                </div>
+                <div class="top-content-post__description">
+                  <p>В сегодняшнем обзоре юристы Professional Legal Alliance проанализировали ряд интересных
+                    процессуальных
+                    нововведений последнего времени и дали свои рекомендации.</p>
+                </div>
+              </div>
+              <div class="content-post__body">
+                <h2 class="content-post__title">Заявитель необоснованных обеспечительных мер
+                  обязан возместить убытки и судебные расходы</h2>
+                <div class="content-post__text">
+                  <p>
+                    Суд дважды принимал обеспечительные меры, препятствующие проведению торгов. Конкурсный управляющий
+                    обратился в суд с
+                    заявлением о взыскании с заявителя обеспечительных мер судебных расходов, так как торги назначались,
+                    но не проводились из-за наложенных обеспечительных мер.
+                    Нижестоящие суды отказали конкурсному управляющему.
+                  </p>
+                  <p>
+                    С коллегами-судьями не согласился Верховный Суд РФ, который постановил
+                    все же взыскать судебные расходы – по правилам п. 3 ст. 1064 ГК РФ о возмещении
+                    вреда, причиненного правомерными действиями.
+                  </p>
+                  <p>
+                    Определение Судебной коллегии по экономическим спорам Верховного Суда Российской Федерации от
+                    25.08.2023 N
+                    307-ЭС19-8097(5) по делу N А13-8408/2015
+                  </p>
+                </div>
+                <div class="content-post__image">
+                  <picture>
+                    <source srcset="/img/publications/03.webp, img/publications/03_2x.webp 2x" type="image/webp" />
+                    <img src="/img/publications/03.jpg" srcset="/img/publications/03_2x.jpg 2x" loading="lazy" alt="" />
+                  </picture>
+                </div>
+                <h2 class="content-post__title">Изменения в КАС РФ: административный процесс
+                  стал более современным</h2>
+                <p>В августе 2023 года вступили в силу ряд изменений в КАС РФ:</p>
+                <ol class="content-post__list">
+                  <li class="content-post__item">По вопросам, не связанным с оказанием квалифицированной юридической
+                    помощи участнику дела (например, ознакомление),
+                    представлять интересы могут лица без высшего юридического образования</li>
+                  <li class="content-post__item">Суду разрешено направлять электронные поручения, вызовы, повестки. Это
+                    разгрузит суды от бумажной работы</li>
+                  <li class="content-post__item">В административном иске нужно указывать номера телефонов и электронную
+                    почту стороны и представителя</li>
+                </ol>
+                <div class="content-post__comments comments-content">
+                  <h2 class="comments-content__title">Комментарий Professional Legal Alliance</h2>
+                  <div class="comments-content__text">
+                    <p>В целом, административный процесс становится более «современным»
+                      и «электронным», суды разгружаются от бумажной работы, взаимодействие
+                      со сторонами тоже происходит путем электронного документооборота.</p>
+                  </div>
+                </div>
+                <h2 class="content-post__title">Провести бесплатную судебную экспертизу не получится?</h2>
+                <div class="content-post__text">
+                  <p>
+                    Подготовлен законопроект о необходимости предварительного перед назначением экспертизы внесения
+                    средств на ее оплату на
+                    специальный счет.
+                  </p>
+                  <p>
+                    Если сторона не внесла средства, суд может признать ее уклоняющейся от проведения экспертизы и может
+                    отказать в
+                    назначении экспертизы.
+                  </p>
+                  <p>
+                    Проект Федерального закона «О внесении изменений в отдельные законодательные акты Российской
+                    Федерации» (подготовлен
+                    Минюстом России, ID проекта 04/13/08-23/00140999)
+                  </p>
+                </div>
+                <div class="content-post__comments comments-content">
+                  <h2 class="comments-content__title">Комментарий Professional Legal Alliance</h2>
+                  <div class="comments-content__text">
+                    <p>Создаются гарантии оплаты экспертизы перед ее проведением, чтобы избежать ситуации, когда сторона
+                      уклоняется от оплаты
+                      уже проведенной экспертизы.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content-post__footer footer-post">
+                <div class="footer-post__socials socials-post">
+                  <a class="socials-post__social" href="#" target="_blank" aria-label="Поделиться в Ватсап">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_10_2452)">
+                        <path
+                          d="M8.559 0.00931016C3.76649 0.235742 -0.0152575 4.19485 -0.00093602 8.95292C0.00132233 10.3529 0.336936 11.7326 0.978569 12.9796L0.0238012 17.5801C0.0118261 17.6373 0.0145601 17.6965 0.0317509 17.7523C0.0489416 17.8081 0.0800348 17.8588 0.122159 17.8995C0.164284 17.9403 0.216081 17.9698 0.272769 17.9855C0.329457 18.0011 0.389208 18.0024 0.446503 17.9891L4.99163 16.9211C6.19407 17.515 7.51574 17.8332 8.85888 17.8522C13.7573 17.9267 17.8424 14.0683 17.9943 9.21164C18.1579 4.00544 13.8263 -0.239506 8.559 0.00931016ZM13.9838 13.8707C12.9395 14.9059 11.594 15.5897 10.1369 15.8259C8.67987 16.0621 7.18484 15.8387 5.86264 15.1871L5.22946 14.8746L2.44284 15.5293L3.02915 12.705L2.71755 12.0993C2.0432 10.7836 1.80564 9.29006 2.03887 7.83234C2.2721 6.37463 2.96415 5.02743 4.01603 3.98348C5.33761 2.67258 7.13006 1.93613 8.99906 1.93613C10.8681 1.93613 12.6605 2.67258 13.9821 3.98348C15.3037 5.29438 16.0461 7.07234 16.0461 8.92623C16.0461 10.7801 15.3037 12.5581 13.9821 13.869L13.9838 13.8707Z" />
+                        <path
+                          d="M13.3673 10.8631L11.624 10.3667C11.5116 10.3349 11.3925 10.3336 11.2794 10.3632C11.1663 10.3927 11.0633 10.4519 10.9813 10.5346L10.5547 10.9651C10.467 11.0542 10.3546 11.1154 10.2318 11.1412C10.109 11.1669 9.98119 11.156 9.86464 11.1097C9.04007 10.7787 7.30413 9.24877 6.86189 8.48382C6.80006 8.37537 6.77196 8.2512 6.78115 8.12694C6.79034 8.00269 6.83641 7.88391 6.91354 7.78558L7.2859 7.30818C7.3573 7.21624 7.40241 7.1069 7.41646 6.99168C7.43051 6.87646 7.41299 6.75961 7.36575 6.65342L6.63232 5.00771C6.59118 4.91602 6.52907 4.8351 6.4509 4.77138C6.37274 4.70765 6.28068 4.66288 6.18202 4.64061C6.08337 4.61834 5.98084 4.61919 5.88257 4.64308C5.7843 4.66698 5.69301 4.71326 5.61592 4.77826C5.12942 5.18636 4.55222 5.80668 4.48191 6.49372C4.35823 7.70508 4.88205 9.23242 6.8632 11.0663C9.1516 13.1851 10.9839 13.4649 12.1774 13.1782C12.8539 13.0155 13.3925 12.3637 13.7362 11.8299C13.7905 11.7452 13.8241 11.6492 13.8345 11.5494C13.8448 11.4496 13.8315 11.3488 13.7957 11.2549C13.7599 11.1611 13.7026 11.0768 13.6282 11.0088C13.5538 10.9408 13.4645 10.8909 13.3673 10.8631Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_2452">
+                          <rect width="18" height="18" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <a class="socials-post__social" href="#" target="_blank" aria-label="Поделиться в Телеграм">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM9.32244 6.6442C8.44706 7.0083 6.69752 7.7619 4.07384 8.90499C3.6478 9.07442 3.42461 9.24016 3.4043 9.40223C3.36996 9.67612 3.71296 9.78398 4.18003 9.93084C4.24356 9.95082 4.30939 9.97152 4.37687 9.99346C4.8364 10.1428 5.45454 10.3176 5.77589 10.3245C6.06738 10.3308 6.39272 10.2106 6.7519 9.96401C9.20329 8.30925 10.4687 7.47286 10.5482 7.45483C10.6042 7.44211 10.6819 7.42611 10.7345 7.47289C10.7871 7.51966 10.7819 7.60824 10.7764 7.632C10.7424 7.77686 9.39602 9.02857 8.69926 9.67633C8.48205 9.87827 8.32798 10.0215 8.29648 10.0542C8.22593 10.1275 8.15402 10.1968 8.08491 10.2635C7.658 10.675 7.33786 10.9836 8.10263 11.4876C8.47015 11.7298 8.76424 11.9301 9.05764 12.1299C9.37805 12.3481 9.69764 12.5657 10.1111 12.8368C10.2165 12.9058 10.3171 12.9775 10.4151 13.0474C10.788 13.3132 11.123 13.5521 11.5369 13.514C11.7774 13.4918 12.0258 13.2657 12.1519 12.5913C12.4501 10.9974 13.0361 7.54384 13.1716 6.12073C13.1835 5.99605 13.1685 5.83648 13.1565 5.76643C13.1446 5.69638 13.1195 5.59658 13.0284 5.5227C12.9206 5.4352 12.7541 5.41675 12.6797 5.41806C12.3412 5.42403 11.8218 5.60461 9.32244 6.6442Z" />
+                    </svg>
+                  </a>
+                  <a class="socials-post__social" href="#" target="_blank" aria-label="Поделиться в Вконтакте">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7363 1.26375C15.4688 0 13.4325 0 9.375 0H8.625C4.5675 0 2.53125 0 1.26375 1.26375C-0.00375 2.5275 1.29767e-07 4.5675 1.29767e-07 8.625V9.375C1.29767e-07 13.4325 8.9407e-08 15.4688 1.26375 16.7362C2.5275 18.0037 4.5675 18 8.625 18H9.375C13.4475 18 15.4838 18 16.7513 16.7362C18.0188 15.4725 18 13.4325 18 9.375V8.625C18 4.5675 18 2.53125 16.7363 1.26375ZM12.915 12.9675C12.7189 12.2649 12.3195 11.6359 11.7671 11.1595C11.2147 10.6832 10.5338 10.3807 9.81 10.29V12.9675H9.5775C5.475 12.9675 3.135 10.155 3.0375 5.4675H5.0925C5.16 8.9025 6.675 10.3425 7.875 10.6575V5.475H9.81V8.4375C10.995 8.31 12.24 6.96 12.66 5.475H14.595C14.4395 6.24722 14.1261 6.97897 13.6743 7.62429C13.2226 8.26962 12.6424 8.81459 11.97 9.225C12.7196 9.59679 13.3819 10.1232 13.9132 10.7696C14.4445 11.416 14.8328 12.1676 15.0525 12.975L12.915 12.9675Z" />
+                    </svg>
+                  </a>
+                </div>
+                <p class="footer-post__label">Поделиться обзором в соцсетях</p>
+              </div>
+            </div>
+            <div class="post__side side-post">
+              <h2 class="side-post__title _title">Другие публикации</h2>
+              <div class="side-post__body">
+                <article class="side-post__item slide-publications__item">
+                  <a class="slide-publications__image" href="#">
+                    <picture>
+                      <source srcset="/img/publications/02.webp, img/publications/02_2x.webp 2x" type="image/webp" />
+                      <img src="/img/publications/02.jpg" srcset="/img/publications/02_2x.jpg 2x" loading="lazy"
+                        alt="" />
+                    </picture>
+                  </a>
+                  <div class="slide-publications__body">
+                    <div class="slide-publications__inner">
+                      <div class="slide-publications__row">
+                        <div class="slide-publications__category">Статья</div>
+                        <div class="slide-publications__date">26 декабря</div>
+                      </div>
+                      <h3 class="slide-publications__title">
+                        <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                          разрешения споров</a>
+                      </h3>
+                    </div>
+                  </div>
+                </article>
+                <article class="side-post__item slide-publications__item">
+                  <a class="slide-publications__image" href="#">
+                    <picture>
+                      <source srcset="/img/publications/03.webp, img/publications/03_2x.webp 2x" type="image/webp" />
+                      <img src="/img/publications/03.jpg" srcset="/img/publications/03_2x.jpg 2x" loading="lazy"
+                        alt="" />
+                    </picture>
+                  </a>
+                  <div class="slide-publications__body">
+                    <div class="slide-publications__inner">
+                      <div class="slide-publications__row">
+                        <div class="slide-publications__category">Статья</div>
+                        <div class="slide-publications__date">26 декабря</div>
+                      </div>
+                      <h3 class="slide-publications__title">
+                        <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                          разрешения споров</a>
+                      </h3>
+                    </div>
+                  </div>
+                </article>
+                <article class="side-post__item slide-publications__item">
+                  <a class="slide-publications__image" href="#">
+                    <picture>
+                      <source srcset="/img/publications/04.webp, img/publications/04_2x.webp 2x" type="image/webp" />
+                      <img src="/img/publications/04.jpg" srcset="/img/publications/04_2x.jpg 2x" loading="lazy"
+                        alt="" />
+                    </picture>
+                  </a>
+                  <div class="slide-publications__body">
+                    <div class="slide-publications__inner">
+                      <div class="slide-publications__row">
+                        <div class="slide-publications__category">Статья</div>
+                        <div class="slide-publications__date">26 декабря</div>
+                      </div>
+                      <h3 class="slide-publications__title">
+                        <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                          разрешения споров</a>
+                      </h3>
+                    </div>
+                  </div>
+                </article>
+                <article class="side-post__item slide-publications__item">
+                  <a class="slide-publications__image" href="#">
+                    <picture>
+                      <source srcset="/img/publications/05.webp, img/publications/05_2x.webp 2x" type="image/webp" />
+                      <img src="/img/publications/05.jpg" srcset="/img/publications/05_2x.jpg 2x" loading="lazy"
+                        alt="" />
+                    </picture>
+                  </a>
+                  <div class="slide-publications__body">
+                    <div class="slide-publications__inner">
+                      <div class="slide-publications__row">
+                        <div class="slide-publications__category">Статья</div>
+                        <div class="slide-publications__date">26 декабря</div>
+                      </div>
+                      <h3 class="slide-publications__title">
+                        <a class="slide-publications__link-title" href="#">Актуальные процессуальные вопросы
+                          разрешения споров</a>
+                      </h3>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- <div class="popup" id="popup" aria-hidden="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button type="button" class="popup__close" aria-label="Закрыть модальное окно" data-popup-close></button>
+      <div class="popup__body"></div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="popup" id="service" aria-hidden="true">
+  <div class="popup__wrapper">
+    <div class="popup__content popup__content--service">
+      <button class="popup__close" aria-label="Закрыть модальное окно" data-popup-close type="button"></button>
+      <div class="popup__service service-popup">
+        <div class="service-popup__content">
+          <div class="service-popup__top top-service-popup">
+            <div class="top-service-popup__body">
+              <div class="top-service-popup__category">Споры и сделки с недвижимостью</div>
+              <h2 class="top-service-popup__title">Недвижимость и строительство</h2>
+            </div>
+            <div class="top-service-popup__background">
+              <picture>
+                <source srcset="/img/accompaniment/bg.webp, img/accompaniment/bg_2x.webp 2x" type="image/webp" />
+                <img src="/img//accompaniment/bg.jpg" srcset="/img//accompaniment/bg_2x.jpg 2x" loading="lazy" alt="" />
+              </picture>
+            </div>
+          </div>
+          <div class="service-popup__body">
+            <ul class="service-popup__list">
+              <li class="service-popup__item item-service-popup">
+                <h3 class="item-service-popup__title">Сделки с недвижимостью</h3>
+                <div class="item-service-popup__text">
+                  <p>Структурирование сделок по приобретению и продаже недвижимого имущества, приобретение прав на
+                    земельные участки из
+                    государственной/муниципальной собственности, Due diligence на стороне покупателя или продавца,
+                    подготовка рекомендаций
+                    по минимизации рисков.
+                  </p>
+                </div>
+              </li>
+              <li class="service-popup__item item-service-popup">
+                <h3 class="item-service-popup__title">Аренда недвижимости</h3>
+                <div class="item-service-popup__text">
+                  <p>Сопровождение сделок по аренде, представление интересов клиента в судебных спорах по аренде.
+                    Девелопмент и
+                    строительство. Инвестиционные проекты. (правовая поддержка при реализации строительных проектов
+                    на незастроенных и застроенных земельных участках)</p>
+                </div>
+              </li>
+              <li class="service-popup__item item-service-popup">
+                <h3 class="item-service-popup__title">Консультирование</h3>
+                <ul class="item-service-popup__sub-list">
+                  <li class="item-service-popup__sub-item">Консультирование по договорам подряда, как по российскому,
+                    так и по иностранному праву</li>
+                  <li class="item-service-popup__sub-item">Консультирование по вопросам получения необходимых разрешений
+                    и согласований для строительства</li>
+                  <li class="item-service-popup__sub-item">Проведение переговоров с регулирующими органами, а также
+                    оспаривание их действий в неблагоприятных для клиентов ситуациях</li>
+                  <li class="item-service-popup__sub-item">Консультирование по всем вопросам, связанным с образованием
+                    земельных участков, их разделением, объединением и изменением границ</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="service-popup__footer footer-service-popup">
+            <h3 class="footer-service-popup__title">Контакты</h3>
+            <div class="footer-service-popup__body">
+              <a class="footer-service-popup__link big-phone" href="tel:84959259554">8 495 925-95-54</a>
+              <a class="footer-service-popup__link grey-email" href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="team" aria-hidden="true">
+  <div class="popup__wrapper">
+    <div class="popup__content popup__content--service">
+      <button type="button" class="popup__close" aria-label="Закрыть модальное окно" data-popup-close></button>
+      <div class="popup__team team-popup">
+        <div class="team-popup__body">
+          <div class="team-popup__items">
+            <div class="team-popup__row">
+              <div class="team-popup__left">
+                <div class="team-popup__block">
+                  <div class="team-popup__prof">Младший юрист</div>
+                  <h3 class="team-popup__name">Айдар <br> Марадулин</h3>
+                </div>
+                <div class="team-popup__item item-team-popup">
+                  <h4 class="item-team-popup__title">Специализация</h4>
+                  <div class="item-team-popup__text">
+                    <p>
+                      Айдар занимается подготовкой правовых позиций в сферах коммерческого, интеллектуального права, а
+                      также в рамках
+                      разрешения споров по договорам поставки, подряда и оказания услуг. Кроме этого осуществляет
+                      аналитическую работу и
+                      подготовку правовых заключений по различным вопросам, оказывает помощь
+                      в составлении договоров.
+                    </p>
+                    <p>
+                      Представляет интересы физических
+                      и юридических лиц в арбитражных судах
+                      (по делам по банкротству), судах общей юрисдикции и в административных органах.
+                      Обладает ценным опытом ведения переговоров между сторонами
+                      по разрешению споров.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-popup__info info-team-popup">
+                <div class="info-team-popup__image">
+                  <picture>
+                    <source srcset="/img/team/01.webp, img/team/01_2x.webp 2x" type="image/webp" />
+                    <img src="/img/team/01.png" srcset="/img/team/01_2x.png 2x" loading="lazy" alt="" />
+                  </picture>
+                </div>
+                <div class="info-team-popup__contacts contacts-team-popup" data-da=".team-popup__body, 991.98, 3">
+                  <div class="contacts-team-popup__body">
+                    <h4 class="contacts-team-popup__title">Контакты</h4>
+                    <div class="contacts-team-popup__links">
+                      <a class="contacts-team-popup__link-phone" href="tel:84959259554">8 495 925-95-54</a>
+                      <a class="contacts-team-popup__link-email"
+                        href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+                    </div>
+                    <div class="contacts-team-popup__socials socials">
+                      <a class="socials__link" href="#" target="_blank" aria-label="Ватсап">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0 16C0.171967 15.3712 0.335585 14.7742 0.498536 14.1768C0.695213 13.4562 0.894226 12.736 1.08489 12.0137C1.10353 11.936 1.09456 11.8542 1.05951 11.7823C0.291508 10.3879 -0.0424073 8.8926 0.091159 7.31251C0.282493 5.05056 1.27689 3.19265 3.03296 1.75247C4.00965 0.948143 5.1716 0.400223 6.41352 0.158356C10.124 -0.579599 13.6929 1.31905 15.2219 4.65754C15.7925 5.90538 16.0089 7.21767 15.9027 8.57972C15.6359 12.0054 13.1025 14.9211 9.748 15.6691C7.85704 16.0905 6.04822 15.8431 4.32154 14.9679C4.24451 14.9322 4.15779 14.9233 4.07511 14.9425C2.78386 15.2764 1.49394 15.6143 0.204022 15.9519C0.146589 15.9659 0.0888216 15.9786 0 16ZM1.91534 14.106C1.99147 14.0877 2.04891 14.0746 2.10601 14.0596C2.80723 13.8763 3.50845 13.6966 4.20968 13.5056C4.35126 13.4672 4.45844 13.489 4.58199 13.5621C6.11032 14.4677 7.74484 14.7358 9.47953 14.3454C13.186 13.5107 15.4302 9.60384 14.2879 5.98285C13.2471 2.68443 9.95369 0.773763 6.56578 1.50838C3.77158 2.11577 1.55772 4.56271 1.41814 7.64976C1.36037 8.92599 1.64053 10.1348 2.30836 11.2267C2.51973 11.5723 2.55679 11.8611 2.43291 12.2371C2.23356 12.8442 2.08864 13.4696 1.91534 14.106Z"
+                            fill="#1F232F" />
+                          <path
+                            d="M3.95117 6.14593C3.96286 5.48344 4.22164 4.93849 4.68946 4.48403C4.75743 4.41419 4.8389 4.3589 4.92891 4.32153C5.01892 4.28416 5.11559 4.26549 5.21304 4.26665C5.32423 4.26665 5.43643 4.28335 5.54695 4.27233C5.78069 4.24929 5.91426 4.36416 5.99607 4.56284C6.21579 5.08909 6.44285 5.61267 6.6472 6.14493C6.68427 6.24143 6.66256 6.3957 6.60713 6.48552C6.4567 6.71803 6.29211 6.94107 6.11428 7.15336C6.00809 7.28492 5.99941 7.40179 6.08522 7.54604C6.73202 8.63194 7.63125 9.42165 8.81031 9.88746C8.96992 9.95057 9.10015 9.92553 9.20934 9.78728C9.40568 9.53952 9.61004 9.29843 9.8017 9.04633C9.91189 8.9004 10.0408 8.84597 10.2044 8.92144C10.7721 9.18857 11.3357 9.45571 11.8957 9.73586C11.9545 9.76525 12.0089 9.86475 12.0112 9.93387C12.0339 10.5232 11.8626 11.0168 11.3374 11.3604C10.6836 11.7878 9.99704 11.8252 9.2671 11.6201C7.39484 11.0946 6.00442 9.92386 4.88814 8.37849C4.52083 7.8676 4.18224 7.34135 4.03933 6.7176C3.99458 6.5316 3.97922 6.33727 3.95117 6.14593Z"
+                            fill="#1F232F" />
+                        </svg>
+                      </a>
+                      <a class="socials__link" href="#" target="_blank" aria-label="Телеграм">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_54_519)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.28662 5.90595C7.5085 6.2296 5.95336 6.89946 3.62119 7.91555C3.24249 8.06615 3.0441 8.21348 3.02604 8.35754C2.99552 8.601 3.30041 8.69687 3.71558 8.82742C3.77205 8.84517 3.83057 8.86357 3.89056 8.88307C4.29902 9.01585 4.84848 9.17118 5.13412 9.17735C5.39323 9.18295 5.68242 9.07613 6.00169 8.85689C8.1807 7.386 9.30552 6.64254 9.37614 6.62651C9.42596 6.6152 9.495 6.60099 9.54178 6.64256C9.58855 6.68414 9.58395 6.76288 9.579 6.784C9.5488 6.91276 8.352 8.02541 7.73267 8.6012C7.5396 8.78069 7.40265 8.90801 7.37465 8.93709C7.31193 9.00223 7.24802 9.06385 7.18658 9.12307C6.80711 9.48889 6.52254 9.76321 7.20234 10.2112C7.52902 10.4265 7.79043 10.6045 8.05123 10.7821C8.33604 10.9761 8.62012 11.1695 8.98767 11.4104C9.08132 11.4718 9.17075 11.5356 9.25786 11.5977C9.58931 11.834 9.8871 12.0463 10.255 12.0124C10.4688 11.9928 10.6896 11.7917 10.8017 11.1922C11.0667 9.77543 11.5877 6.70564 11.7081 5.44065C11.7186 5.32982 11.7054 5.18798 11.6947 5.12572C11.684 5.06345 11.6618 4.97474 11.5808 4.90907C11.485 4.83129 11.337 4.81489 11.2708 4.81606C10.9699 4.82136 10.5083 4.98188 8.28662 5.90595Z"
+                              fill="#1F232F" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_54_519">
+                              <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                      <a class="socials__link" href="#" target="_blank" aria-label="Вконтакте">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_54_522)">
+                            <path
+                              d="M14.8767 1.12333C13.75 0 11.94 0 8.33333 0H7.66667C4.06 0 2.25 0 1.12333 1.12333C-0.00333333 2.24667 1.15348e-07 4.06 1.15348e-07 7.66667V8.33333C1.15348e-07 11.94 7.94729e-08 13.75 1.12333 14.8767C2.24667 16.0033 4.06 16 7.66667 16H8.33333C11.9533 16 13.7633 16 14.89 14.8767C16.0167 13.7533 16 11.94 16 8.33333V7.66667C16 4.06 16 2.25 14.8767 1.12333ZM11.48 11.5267C11.3057 10.9021 10.9507 10.343 10.4597 9.91959C9.96861 9.49615 9.36338 9.22725 8.72 9.14667V11.5267H8.51333C4.86667 11.5267 2.78667 9.02667 2.7 4.86H4.52667C4.58667 7.91333 5.93333 9.19333 7 9.47333V4.86667H8.72V7.5C9.77333 7.38667 10.88 6.18667 11.2533 4.86667H12.9733C12.8351 5.55309 12.5565 6.20353 12.155 6.77715C11.7534 7.35077 11.2377 7.83519 10.64 8.2C11.3063 8.53048 11.895 8.99842 12.3673 9.57298C12.8396 10.1475 13.1847 10.8157 13.38 11.5333L11.48 11.5267Z"
+                              fill="#1F232F" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_54_522">
+                              <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-popup__items team-popup__items--pad">
+            <div class="team-popup__item item-team-popup">
+              <h4 class="item-team-popup__title">Образование</h4>
+              <div class="item-team-popup__text">
+                <p>
+                  Айдар занимается подготовкой правовых позиций в сферах коммерческого, интеллектуального права, а
+                  также в рамках
+                  разрешения споров по договорам поставки, подряда и оказания услуг. Кроме этого осуществляет
+                  аналитическую работу и
+                  подготовку правовых заключений по различным вопросам, оказывает помощь
+                  в составлении договоров.
+                </p>
+                <p>
+                  Представляет интересы физических
+                  и юридических лиц в арбитражных судах
+                  (по делам по банкротству), судах общей юрисдикции и в административных органах.
+                  Обладает ценным опытом ведения переговоров между сторонами
+                  по разрешению споров.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="team-popup__items team-popup__items--pad">
+            <div class="team-popup__item item-team-popup">
+              <div class="item-team-popup__top">
+                <h4 class="item-team-popup__title">Проекты</h4>
+                <div class="item-team-popup__controlls controlls-team-popup">
+                  <button type="button" class="controlls-team-popup__arrow controlls-team-popup__arrow--prev"
+                    aria-lavbel="Предыдущий слайд">
+                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.49954 14.6L1.06621 9.16669C0.424544 8.52502 0.424544 7.47503 1.06621 6.83336L6.49954 1.40002"
+                        stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button type="button" class="controlls-team-popup__arrow controlls-team-popup__arrow--next"
+                    aria-lavbel="Следующий слайд">
+                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.4248 14.6L6.85814 9.16669C7.49981 8.52502 7.49981 7.47503 6.85814 6.83336L1.4248 1.40002"
+                        stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="item-team-popup__projects projects-slider">
+                <div class="projects-slider__slider swiper">
+                  <div class="projects-slider__wrapper swiper-wrapper">
+                    <div class="projects-slider__slide swiper-slide">
+                      <div class="projects-slider__item item-cases">
+                        <div class="item-cases__top">
+                          <h3 class="item-cases__title">Представление интересов крупнейшей российской компании,
+                            реализующей комиссионный продукт</h3>
+                        </div>
+                        <div class="item-cases__body item-cases__body--popup">
+                          <div class="item-cases__label">Задача</div>
+                          <div class="item-cases__descr">
+                            <p>Долгосрочное юридическое сопровождения компании , предоставляющей услуги по выдаче
+                              независимой гарантии банкам России.</p>
+                          </div>
+                        </div>
+                        <a class="item-cases__link button" href="#">смотреть</a>
+                      </div>
+                    </div>
+                    <div class="projects-slider__slide swiper-slide">
+                      <div class="projects-slider__item item-cases">
+                        <div class="item-cases__top">
+                          <h3 class="item-cases__title">Представление интересов крупнейшей российской компании,
+                            реализующей комиссионный продукт</h3>
+                        </div>
+                        <div class="item-cases__body item-cases__body--popup">
+                          <div class="item-cases__label">Задача</div>
+                          <div class="item-cases__descr">
+                            <p>Долгосрочное юридическое сопровождения компании , предоставляющей услуги по выдаче
+                              независимой гарантии банкам России.</p>
+                          </div>
+                        </div>
+                        <a class="item-cases__link button" href="#">смотреть</a>
+                      </div>
+                    </div>
+                    <div class="projects-slider__slide swiper-slide">
+                      <div class="projects-slider__item item-cases">
+                        <div class="item-cases__top">
+                          <h3 class="item-cases__title">Представление интересов крупнейшей российской компании,
+                            реализующей комиссионный продукт</h3>
+                        </div>
+                        <div class="item-cases__body item-cases__body--popup">
+                          <div class="item-cases__label">Задача</div>
+                          <div class="item-cases__descr">
+                            <p>Долгосрочное юридическое сопровождения компании , предоставляющей услуги по выдаче
+                              независимой гарантии банкам России.</p>
+                          </div>
+                        </div>
+                        <a class="item-cases__link button" href="#">смотреть</a>
+                      </div>
+                    </div>
+                    <div class="projects-slider__slide swiper-slide">
+                      <div class="projects-slider__item item-cases">
+                        <div class="item-cases__top">
+                          <h3 class="item-cases__title">Представление интересов крупнейшей российской компании,
+                            реализующей комиссионный продукт</h3>
+                        </div>
+                        <div class="item-cases__body item-cases__body--popup">
+                          <div class="item-cases__label">Задача</div>
+                          <div class="item-cases__descr">
+                            <p>Долгосрочное юридическое сопровождения компании , предоставляющей услуги по выдаче
+                              независимой гарантии банкам России.</p>
+                          </div>
+                        </div>
+                        <a class="item-cases__link button" href="#">смотреть</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><footer class="footer">
+  <div class="footer__container">
+    <div class="footer__body">
+      <div class="footer__info info-footer">
+        <div class="info-footer__contact">
+          <a class="info-footer__link-phone big-phone" href="tel:84959259554">8 495 925-95-54</a>
+          <a class="info-footer__link-email grey-email" href="mailto:info@mos-arbitr.com">info@mos-arbitr.com</a>
+        </div>
+        <div class="info-footer__address address-info-footer">
+          <div class="address-info-footer__label">Адрес альянса</div>
+          <div class="address-info-footer__body">
+            <div class="address-info-footer__inner">
+              <div class="address-info-footer__address">Москва, ул. Николоямская, д. 48, строение 2</div>
+              <div class="address-info-footer__hourse">Мы открыты с 10:00 до 19:00, воскресенье выходной</div>
+            </div>
+            <a class="address-info-footer__link" href="#">НА карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__block block-footer">
+        <a class="block-footer__logo" href="#">
+          <img src="/img/header/logo.svg" alt="Логотип компании">
+        </a>
+        <div class="block-footer__socials socials">
+          <a class="socials__link" href="#" target="_blank" aria-label="Ватсап">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 16C0.171967 15.3712 0.335585 14.7742 0.498536 14.1768C0.695213 13.4562 0.894226 12.736 1.08489 12.0137C1.10353 11.936 1.09456 11.8542 1.05951 11.7823C0.291508 10.3879 -0.0424073 8.8926 0.091159 7.31251C0.282493 5.05056 1.27689 3.19265 3.03296 1.75247C4.00965 0.948143 5.1716 0.400223 6.41352 0.158356C10.124 -0.579599 13.6929 1.31905 15.2219 4.65754C15.7925 5.90538 16.0089 7.21767 15.9027 8.57972C15.6359 12.0054 13.1025 14.9211 9.748 15.6691C7.85704 16.0905 6.04822 15.8431 4.32154 14.9679C4.24451 14.9322 4.15779 14.9233 4.07511 14.9425C2.78386 15.2764 1.49394 15.6143 0.204022 15.9519C0.146589 15.9659 0.0888216 15.9786 0 16ZM1.91534 14.106C1.99147 14.0877 2.04891 14.0746 2.10601 14.0596C2.80723 13.8763 3.50845 13.6966 4.20968 13.5056C4.35126 13.4672 4.45844 13.489 4.58199 13.5621C6.11032 14.4677 7.74484 14.7358 9.47953 14.3454C13.186 13.5107 15.4302 9.60384 14.2879 5.98285C13.2471 2.68443 9.95369 0.773763 6.56578 1.50838C3.77158 2.11577 1.55772 4.56271 1.41814 7.64976C1.36037 8.92599 1.64053 10.1348 2.30836 11.2267C2.51973 11.5723 2.55679 11.8611 2.43291 12.2371C2.23356 12.8442 2.08864 13.4696 1.91534 14.106Z"
+                fill="#1F232F" />
+              <path
+                d="M3.95117 6.14593C3.96286 5.48344 4.22164 4.93849 4.68946 4.48403C4.75743 4.41419 4.8389 4.3589 4.92891 4.32153C5.01892 4.28416 5.11559 4.26549 5.21304 4.26665C5.32423 4.26665 5.43643 4.28335 5.54695 4.27233C5.78069 4.24929 5.91426 4.36416 5.99607 4.56284C6.21579 5.08909 6.44285 5.61267 6.6472 6.14493C6.68427 6.24143 6.66256 6.3957 6.60713 6.48552C6.4567 6.71803 6.29211 6.94107 6.11428 7.15336C6.00809 7.28492 5.99941 7.40179 6.08522 7.54604C6.73202 8.63194 7.63125 9.42165 8.81031 9.88746C8.96992 9.95057 9.10015 9.92553 9.20934 9.78728C9.40568 9.53952 9.61004 9.29843 9.8017 9.04633C9.91189 8.9004 10.0408 8.84597 10.2044 8.92144C10.7721 9.18857 11.3357 9.45571 11.8957 9.73586C11.9545 9.76525 12.0089 9.86475 12.0112 9.93387C12.0339 10.5232 11.8626 11.0168 11.3374 11.3604C10.6836 11.7878 9.99704 11.8252 9.2671 11.6201C7.39484 11.0946 6.00442 9.92386 4.88814 8.37849C4.52083 7.8676 4.18224 7.34135 4.03933 6.7176C3.99458 6.5316 3.97922 6.33727 3.95117 6.14593Z"
+                fill="#1F232F" />
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Телеграм">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_54_519)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.28662 5.90595C7.5085 6.2296 5.95336 6.89946 3.62119 7.91555C3.24249 8.06615 3.0441 8.21348 3.02604 8.35754C2.99552 8.601 3.30041 8.69687 3.71558 8.82742C3.77205 8.84517 3.83057 8.86357 3.89056 8.88307C4.29902 9.01585 4.84848 9.17118 5.13412 9.17735C5.39323 9.18295 5.68242 9.07613 6.00169 8.85689C8.1807 7.386 9.30552 6.64254 9.37614 6.62651C9.42596 6.6152 9.495 6.60099 9.54178 6.64256C9.58855 6.68414 9.58395 6.76288 9.579 6.784C9.5488 6.91276 8.352 8.02541 7.73267 8.6012C7.5396 8.78069 7.40265 8.90801 7.37465 8.93709C7.31193 9.00223 7.24802 9.06385 7.18658 9.12307C6.80711 9.48889 6.52254 9.76321 7.20234 10.2112C7.52902 10.4265 7.79043 10.6045 8.05123 10.7821C8.33604 10.9761 8.62012 11.1695 8.98767 11.4104C9.08132 11.4718 9.17075 11.5356 9.25786 11.5977C9.58931 11.834 9.8871 12.0463 10.255 12.0124C10.4688 11.9928 10.6896 11.7917 10.8017 11.1922C11.0667 9.77543 11.5877 6.70564 11.7081 5.44065C11.7186 5.32982 11.7054 5.18798 11.6947 5.12572C11.684 5.06345 11.6618 4.97474 11.5808 4.90907C11.485 4.83129 11.337 4.81489 11.2708 4.81606C10.9699 4.82136 10.5083 4.98188 8.28662 5.90595Z"
+                  fill="#1F232F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_54_519">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Вконтакте">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_54_522)">
+                <path
+                  d="M14.8767 1.12333C13.75 0 11.94 0 8.33333 0H7.66667C4.06 0 2.25 0 1.12333 1.12333C-0.00333333 2.24667 1.15348e-07 4.06 1.15348e-07 7.66667V8.33333C1.15348e-07 11.94 7.94729e-08 13.75 1.12333 14.8767C2.24667 16.0033 4.06 16 7.66667 16H8.33333C11.9533 16 13.7633 16 14.89 14.8767C16.0167 13.7533 16 11.94 16 8.33333V7.66667C16 4.06 16 2.25 14.8767 1.12333ZM11.48 11.5267C11.3057 10.9021 10.9507 10.343 10.4597 9.91959C9.96861 9.49615 9.36338 9.22725 8.72 9.14667V11.5267H8.51333C4.86667 11.5267 2.78667 9.02667 2.7 4.86H4.52667C4.58667 7.91333 5.93333 9.19333 7 9.47333V4.86667H8.72V7.5C9.77333 7.38667 10.88 6.18667 11.2533 4.86667H12.9733C12.8351 5.55309 12.5565 6.20353 12.155 6.77715C11.7534 7.35077 11.2377 7.83519 10.64 8.2C11.3063 8.53048 11.895 8.99842 12.3673 9.57298C12.8396 10.1475 13.1847 10.8157 13.38 11.5333L11.48 11.5267Z"
+                  fill="#1F232F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_54_522">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Ютуб">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.8406 4.79995C15.8406 4.79995 15.6844 3.69683 15.2031 3.21245C14.5938 2.57495 13.9125 2.57183 13.6 2.53433C11.3625 2.37183 8.00313 2.37183 8.00313 2.37183H7.99687C7.99687 2.37183 4.6375 2.37183 2.4 2.53433C2.0875 2.57183 1.40625 2.57495 0.796875 3.21245C0.315625 3.69683 0.1625 4.79995 0.1625 4.79995C0.1625 4.79995 0 6.09683 0 7.39058V8.60308C0 9.89683 0.159375 11.1937 0.159375 11.1937C0.159375 11.1937 0.315625 12.2968 0.79375 12.7812C1.40313 13.4187 2.20313 13.3968 2.55938 13.4656C3.84063 13.5875 8 13.625 8 13.625C8 13.625 11.3625 13.6187 13.6 13.4593C13.9125 13.4218 14.5938 13.4187 15.2031 12.7812C15.6844 12.2968 15.8406 11.1937 15.8406 11.1937C15.8406 11.1937 16 9.89995 16 8.60308V7.39058C16 6.09683 15.8406 4.79995 15.8406 4.79995ZM6.34688 10.075V5.57808L10.6687 7.83433L6.34688 10.075Z"
+                fill="#1F232F" />
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Инстаграм">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_54_513)">
+                <path
+                  d="M8 1.44062C10.1375 1.44062 10.3906 1.45 11.2313 1.4875C12.0125 1.52187 12.4344 1.65313 12.7156 1.7625C13.0875 1.90625 13.3563 2.08125 13.6344 2.35937C13.9156 2.64062 14.0875 2.90625 14.2313 3.27812C14.3406 3.55937 14.4719 3.98437 14.5063 4.7625C14.5438 5.60625 14.5531 5.85937 14.5531 7.99375C14.5531 10.1312 14.5438 10.3844 14.5063 11.225C14.4719 12.0063 14.3406 12.4281 14.2313 12.7094C14.0875 13.0813 13.9125 13.35 13.6344 13.6281C13.3531 13.9094 13.0875 14.0813 12.7156 14.225C12.4344 14.3344 12.0094 14.4656 11.2313 14.5C10.3875 14.5375 10.1344 14.5469 8 14.5469C5.8625 14.5469 5.60938 14.5375 4.76875 14.5C3.9875 14.4656 3.56563 14.3344 3.28438 14.225C2.9125 14.0813 2.64375 13.9062 2.36563 13.6281C2.08438 13.3469 1.9125 13.0813 1.76875 12.7094C1.65938 12.4281 1.52813 12.0031 1.49375 11.225C1.45625 10.3813 1.44688 10.1281 1.44688 7.99375C1.44688 5.85625 1.45625 5.60312 1.49375 4.7625C1.52813 3.98125 1.65938 3.55937 1.76875 3.27812C1.9125 2.90625 2.0875 2.6375 2.36563 2.35937C2.64688 2.07812 2.9125 1.90625 3.28438 1.7625C3.56563 1.65313 3.99063 1.52187 4.76875 1.4875C5.60938 1.45 5.8625 1.44062 8 1.44062ZM8 0C5.82813 0 5.55625 0.009375 4.70313 0.046875C3.85313 0.084375 3.26875 0.221875 2.7625 0.41875C2.23438 0.625 1.7875 0.896875 1.34375 1.34375C0.896875 1.7875 0.625 2.23438 0.41875 2.75938C0.221875 3.26875 0.084375 3.85 0.046875 4.7C0.009375 5.55625 0 5.82812 0 8C0 10.1719 0.009375 10.4437 0.046875 11.2969C0.084375 12.1469 0.221875 12.7312 0.41875 13.2375C0.625 13.7656 0.896875 14.2125 1.34375 14.6562C1.7875 15.1 2.23438 15.375 2.75938 15.5781C3.26875 15.775 3.85 15.9125 4.7 15.95C5.55313 15.9875 5.825 15.9969 7.99688 15.9969C10.1688 15.9969 10.4406 15.9875 11.2938 15.95C12.1438 15.9125 12.7281 15.775 13.2344 15.5781C13.7594 15.375 14.2063 15.1 14.65 14.6562C15.0938 14.2125 15.3688 13.7656 15.5719 13.2406C15.7688 12.7313 15.9063 12.15 15.9438 11.3C15.9813 10.4469 15.9906 10.175 15.9906 8.00313C15.9906 5.83125 15.9813 5.55937 15.9438 4.70625C15.9063 3.85625 15.7688 3.27187 15.5719 2.76562C15.375 2.23437 15.1031 1.7875 14.6563 1.34375C14.2125 0.9 13.7656 0.625 13.2406 0.421875C12.7313 0.225 12.15 0.0875 11.3 0.05C10.4438 0.009375 10.1719 0 8 0Z"
+                  fill="#1F232F" />
+                <path
+                  d="M8 3.89062C5.73125 3.89062 3.89062 5.73125 3.89062 8C3.89062 10.2688 5.73125 12.1094 8 12.1094C10.2688 12.1094 12.1094 10.2688 12.1094 8C12.1094 5.73125 10.2688 3.89062 8 3.89062ZM8 10.6656C6.52813 10.6656 5.33437 9.47188 5.33437 8C5.33437 6.52813 6.52813 5.33437 8 5.33437C9.47188 5.33437 10.6656 6.52813 10.6656 8C10.6656 9.47188 9.47188 10.6656 8 10.6656Z"
+                  fill="#1F232F" />
+                <path
+                  d="M13.2312 3.72817C13.2312 4.25943 12.8 4.68755 12.2719 4.68755C11.7406 4.68755 11.3125 4.2563 11.3125 3.72817C11.3125 3.19692 11.7438 2.7688 12.2719 2.7688C12.8 2.7688 13.2312 3.20005 13.2312 3.72817Z"
+                  fill="#1F232F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_54_513">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom bottom-footer">
+      <div class="bottom-footer__info bottom-footer__text">ИНН 9721032703, ОГРН 5167746462923, КПП 770901001</div>
+      <div class="bottom-footer__row">
+        <a class="bottom-footer__text">© 2001-2023 Официальный сайт «Профессиональный правовой альянс"». Все права
+          защищены</a>
+        <a class="bottom-footer__link bottom-footer__text" href="#">Политика конфиденциальности</a>
+        <a class="bottom-footer__link bottom-footer__text" href="#">Карта сайта</a>
+      </div>
+    </div>
+  </div>
+</footer>  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

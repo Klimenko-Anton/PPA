@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ППА</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(66deg, #163453, #3d746a);
+    }
+
+    .rootpage__title {
+      color: #fff;
+    }
+
+    .rootpage__title:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .rootpage__body {
+      padding: 25px;
+    }
+
+    .rootpage__items {
+      display: grid;
+      gap: 30px;
+      color: #fcfcfc;
+    }
+
+    .rootpage__list {
+      display: grid;
+      gap: 15px;
+    }
+
+    .rootpage__item {}
+
+    .rootpage__link {
+      text-decoration: none;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 500;
+      color: inherit;
+    }
+
+    .rootpage__link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rootpage__body">
+    <h1 class="rootpage__title">Вёрстка "ППА"</h1>
+    <div class="rootpage__content">
+      <div class="rootpage__items">
+        <p>Готовые страницы: </p>
+        <ol class="rootpage__list">
+          <li class="rootpage__item">
+            <a class="rootpage__link" href="home.html" target="_blank">Главная</a>
+          </li>
+          <li class="rootpage__item">
+            <a class="rootpage__link" href="blog.html" target="_blank">Блог</a>
+          </li>
+          <li class="rootpage__item">
+            <a class="rootpage__link" href="post.html" target="_blank">Пост</a>
+          </li>
+          <li class="rootpage__item">
+            <a class="rootpage__link" href="404.html" target="_blank">404</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
